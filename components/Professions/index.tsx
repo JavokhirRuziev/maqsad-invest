@@ -6,7 +6,6 @@ import Card from './components/Card';
 import { professions } from '../../public/data/professions';
 import Button from '@mui/material/Button';
 import Vawe from './components/Vawe';
-import SecondaryBg from '../Containers/SecondaryBg';
 
 const index = () => {
     return (

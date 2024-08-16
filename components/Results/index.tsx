@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 
 const index = () => {
     return (
-        <Container sx={{ my: 7 }}>
+        <Container sx={{ my: 10 }}>
             <Box sx={wrapperStyles}>
                 <Typography variant='h1' sx={textH1Styles}>
                     kursdan so’ng{' '}
