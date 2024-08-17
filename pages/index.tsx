@@ -7,6 +7,7 @@ import Results from '../components/Results';
 import Tarifs from '../components/Tarifs';
 import Introduce from '../components/Introduce';
 import Achievements from '../components/Achievements';
+import TwoWays from '../components/TwoWays';
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <Lessons />
             <Introduce />
             <Achievements />
+            <TwoWays />
             <Tarifs />
             <Results />
             <Footer />
