@@ -8,6 +8,7 @@ import Tarifs from '../components/Tarifs';
 import Introduce from '../components/Introduce';
 import Achievements from '../components/Achievements';
 import TwoWays from '../components/TwoWays';
+import Students from '../components/Students';
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
             <Introduce />
             <Achievements />
             <TwoWays />
+            <Students />
             <Tarifs />
             <Results />
             <Footer />
