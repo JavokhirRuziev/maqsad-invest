@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import Results from '../components/Results';
 import Tarifs from '../components/Tarifs';
 import Introduce from '../components/Introduce';
+import Achievements from '../components/Achievements';
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <Materials />
             <Lessons />
             <Introduce />
+            <Achievements />
             <Tarifs />
             <Results />
             <Footer />

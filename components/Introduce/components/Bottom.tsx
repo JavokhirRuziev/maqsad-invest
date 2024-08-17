@@ -7,16 +7,7 @@ import { theme } from '@/theme';
 const Bottom = () => {
     return (
         <Box sx={{ maxWidth: 800, mx: 'auto', mt: 10 }}>
-            <Box
-                sx={{
-                    background: `linear-gradient(to right, ${theme.palette.common.black}, ${theme.palette.secondary.light})`,
-                    width: 'fit-content',
-                    mx: 'auto',
-                    borderRadius: 100,
-                    p: 3,
-                    mb: 3,
-                }}
-            >
+            <Box sx={iconWrapperStyles}>
                 <RestoreIcon
                     sx={{ width: 130, height: 130, color: 'info.light' }}
                 />
@@ -66,4 +57,13 @@ const textH1Styles = {
     mb: 3,
     mx: 'auto',
     textAlign: 'center',
+};
+
+const iconWrapperStyles = {
+    background: `linear-gradient(to right, ${theme.palette.common.black}, ${theme.palette.secondary.light})`,
+    width: 'fit-content',
+    mx: 'auto',
+    borderRadius: 100,
+    p: 3,
+    mb: 3,
 };
