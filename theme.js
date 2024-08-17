@@ -33,7 +33,7 @@ export let theme = createTheme({
             light: '#F5000033',
         },
         warning: {
-            main: '#000000',
+            main: '#FFD700',
             light: '#3A3A3A',
         },
         common: {
@@ -80,8 +80,8 @@ theme = createTheme(theme, {
         MuiButton: {
             styleOverrides: {
                 sizeSmall: {
-                    fontSize: 30,
-                    padding: '40px 100px',
+                    fontSize: 20,
+                    padding: '20px 30px',
                 },
                 sizeMedium: {
                     fontSize: 30,

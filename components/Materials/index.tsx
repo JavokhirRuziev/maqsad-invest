@@ -33,8 +33,10 @@ const index = () => {
                         sx={{ width: 244, bgcolor: 'primary.light', height: 5 }}
                     />
                     <Typography variant='h2' sx={bPointStyles}>
-                        <EmojiEventsIcon sx={{ mr: 1, color: '#FFD700' }} /> B
-                        nuqtaga
+                        <EmojiEventsIcon
+                            sx={{ mr: 1, color: 'warning.main' }}
+                        />{' '}
+                        B nuqtaga
                     </Typography>
                 </Box>
                 <Typography variant='h1' sx={materialsTextStyles}>
