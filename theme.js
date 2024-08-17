@@ -34,7 +34,7 @@ export let theme = createTheme({
         },
         warning: {
             main: '#FFD700',
-            light: '#3A3A3A',
+            light: '#2090d8',
         },
         common: {
             black: '#051d19',
