@@ -39,6 +39,6 @@ const cardWrapperStyles = {
     mt: 7,
     display: 'flex',
     flexWrap: 'wrap',
-    gap: 4,
+    gap: { desktop: 4, tablet: 3.5, mobile: 2.5 },
     justifyContent: 'center',
 };

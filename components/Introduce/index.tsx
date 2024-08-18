@@ -10,20 +10,27 @@ import Bottom from './components/Bottom';
 const index = () => {
     return (
         <SecondaryBg sx={{ py: 10 }}>
-            <Container sx={{ maxWidth: '1300px !important' }}>
-                <Typography variant='h4' sx={textH4Styles}>
-                    Meni tanimaganlar uchun:
-                </Typography>
-                <Box sx={titleMainWrapperStyles}>
-                    <Typography variant='h1' sx={titleMainStyles}>
-                        kurs muallifi
+            <Container>
+                <Box
+                    sx={{
+                        maxWidth: { desktop: 1100, tablet: 1000, mobile: 900 },
+                        mx: 'auto',
+                    }}
+                >
+                    <Typography variant='h4' sx={textH4Styles}>
+                        Meni tanimaganlar uchun:
                     </Typography>
-                    <Typography variant='h1' sx={titleMainStyles}>
-                        haqida
-                    </Typography>
+                    <Box sx={titleMainWrapperStyles}>
+                        <Typography variant='h1' sx={titleMainStyles}>
+                            kurs muallifi
+                        </Typography>
+                        <Typography variant='h1' sx={titleMainStyles}>
+                            haqida
+                        </Typography>
+                    </Box>
+                    <Content />
+                    <Bottom />
                 </Box>
-                <Content />
-                <Bottom />
             </Container>
         </SecondaryBg>
     );

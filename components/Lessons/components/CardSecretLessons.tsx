@@ -38,11 +38,11 @@ export default CardSecretLessons;
 
 const wrapperStyles = (isLastChild: boolean) => ({
     bgcolor: isLastChild ? 'secondary.main' : 'common.black',
-    py: 5,
+    py: { desktop: 5, tablet: 4, mobile: 3.5 },
     px: 3,
     borderRadius: 2,
     mx: 'auto',
-    width: 786,
+    width: { desktop: 738, tablet: 638, mobile: 538 },
 });
 
 const moduleWrapperStyles = {
@@ -60,7 +60,11 @@ const titleMainStyles = {
     textTransform: 'uppercase',
     color: 'common.white',
     mb: 4,
-    fontSize: '40px !important',
+    fontSize: {
+        desktop: '40px !important',
+        tablet: '35px !important',
+        mobile: '30px !important',
+    },
 };
 
 const iconWrapperStyles = {
@@ -71,6 +75,6 @@ const iconWrapperStyles = {
 
 const iconStyles = {
     bgcolor: 'primary.main',
-    width: 40,
-    height: 40,
+    width: { desktop: 40, tablet: 35, mobile: 30 },
+    height: { desktop: 40, tablet: 35, mobile: 30 },
 };

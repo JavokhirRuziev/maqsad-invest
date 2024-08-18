@@ -1,16 +1,10 @@
 import { createTheme } from '@mui/material/styles';
 
-// x|s, extra-small: 0px
-// s|m, small: 600px
-// m|d, medium: 900px
-// l|g, large: 1200px
-// x|l, extra-large: 1536px
-
 export let theme = createTheme({
     breakpoints: {
         values: {
-            mobile: 0,
-            tablet: 700,
+            mobile: 700,
+            tablet: 1100,
             desktop: 1440,
         },
     },
@@ -66,9 +60,13 @@ theme = createTheme(theme, {
         MuiContainer: {
             styleOverrides: {
                 maxWidthXl: {
-                    [theme.breakpoints.down('desktop')]: {
+                    [theme.breakpoints.down('tablet')]: {
                         padding: '0 16px',
                         maxWidth: '100%',
+                    },
+                    [theme.breakpoints.between('tablet', 'desktop')]: {
+                        maxWidth: '1300px',
+                        padding: '0 16px',
                     },
                     [theme.breakpoints.up('desktop')]: {
                         maxWidth: '1440px',
@@ -79,27 +77,26 @@ theme = createTheme(theme, {
         },
         MuiButton: {
             styleOverrides: {
-                sizeSmall: {
-                    fontSize: 20,
-                    padding: '20px 30px',
-                },
-                sizeMedium: {
-                    fontSize: 30,
-                    padding: '40px 100px',
-                },
-                sizeLarge: {
-                    fontSize: 30,
-                    padding: '40px 100px',
-                },
                 root: {
                     background: `linear-gradient(to right, ${theme.palette.primary.light}, ${theme.palette.primary.main})`,
                     color: theme.palette.common.white,
-                    padding: '10px 20px',
                     borderRadius: '4px',
                     boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
                     fontWeight: 'bold',
                     position: 'relative',
                     overflow: 'hidden',
+                    [theme.breakpoints.up('desktop')]: {
+                        fontSize: 30,
+                        padding: '40px 100px',
+                    },
+                    [theme.breakpoints.between('tablet', 'desktop')]: {
+                        fontSize: 25,
+                        padding: '30px 70px',
+                    },
+                    [theme.breakpoints.down('tablet')]: {
+                        fontSize: 20,
+                        padding: '20px 50px',
+                    },
                 },
             },
         },
@@ -120,7 +117,11 @@ theme = createTheme(theme, {
                     },
                 },
                 h2: {
-                    [theme.breakpoints.down('desktop')]: {
+                    [theme.breakpoints.down('tablet')]: {
+                        fontSize: 20,
+                        fontFamily: `'UbuntuLight', sans-serif`,
+                    },
+                    [theme.breakpoints.between('tablet', 'desktop')]: {
                         fontSize: 26,
                         fontFamily: `'UbuntuLight', sans-serif`,
                     },
@@ -130,7 +131,11 @@ theme = createTheme(theme, {
                     },
                 },
                 h3: {
-                    [theme.breakpoints.down('desktop')]: {
+                    [theme.breakpoints.down('tablet')]: {
+                        fontSize: 18,
+                        fontFamily: `'UbuntuRegular', sans-serif`,
+                    },
+                    [theme.breakpoints.between('tablet', 'desktop')]: {
                         fontSize: 22,
                         fontFamily: `'UbuntuRegular', sans-serif`,
                     },
@@ -140,7 +145,11 @@ theme = createTheme(theme, {
                     },
                 },
                 h4: {
-                    [theme.breakpoints.down('desktop')]: {
+                    [theme.breakpoints.down('tablet')]: {
+                        fontSize: 16,
+                        fontFamily: `'UbuntuRegular', sans-serif`,
+                    },
+                    [theme.breakpoints.between('tablet', 'desktop')]: {
                         fontSize: 18,
                         fontFamily: `'UbuntuRegular', sans-serif`,
                     },
@@ -150,20 +159,30 @@ theme = createTheme(theme, {
                     },
                 },
                 body1: {
-                    fontFamily: `'UbuntuRegular', sans-serif`,
-                    fontSize: 14,
+                    [theme.breakpoints.down('tablet')]: {
+                        fontFamily: `'UbuntuRegular', sans-serif`,
+                        fontSize: 12,
+                    },
+                    [theme.breakpoints.between('tablet', 'desktop')]: {
+                        fontFamily: `'UbuntuRegular', sans-serif`,
+                        fontSize: 14,
+                    },
+                    [theme.breakpoints.up('desktop')]: {
+                        fontFamily: `'UbuntuRegular', sans-serif`,
+                        fontSize: 14,
+                    },
                 },
                 body2: {
-                    fontFamily: `'InterRegular', sans-serif`,
+                    fontFamily: `'UbuntuRegular', sans-serif`,
                     fontSize: 13,
                 },
                 subtitle1: {
-                    fontFamily: `'InterRegular', sans-serif`,
+                    fontFamily: `'UbuntuRegular', sans-serif`,
                     fontSize: 12,
                     color: theme.palette.grey[600],
                 },
                 subtitle2: {
-                    fontFamily: `'InterRegular', sans-serif`,
+                    fontFamily: `'UbuntuRegular', sans-serif`,
                     fontSize: 10,
                 },
             },

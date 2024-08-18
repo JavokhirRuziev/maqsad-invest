@@ -23,8 +23,8 @@ const iframeWrapperStyles = {
     display: 'flex',
     justifyContent: 'center',
     iframe: {
-        width: 350,
-        height: 250,
+        width: { desktop: 350, tablet: 300, mobile: 250 },
+        height: { desktop: 250, tablet: 230, mobile: 210 },
         aspectRatio: '16/9',
         borderRadius: 2,
     },

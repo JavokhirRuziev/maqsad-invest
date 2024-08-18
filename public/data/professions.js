@@ -11,7 +11,11 @@ export const professions = [
         description: 'Uzini treding sohasida topmoqchi bulgan trederlar',
         icon: (
             <RocketLaunchIcon
-                sx={{ color: 'common.white', width: 40, height: 40 }}
+                sx={{
+                    color: 'common.white',
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                }}
             />
         ),
     },
@@ -20,7 +24,11 @@ export const professions = [
         description: 'Uz yunalishiga tusholmayotgan Boshlangich trederlar',
         icon: (
             <PhoneIphoneIcon
-                sx={{ color: 'common.white', width: 40, height: 40 }}
+                sx={{
+                    color: 'common.white',
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                }}
             />
         ),
     },
@@ -29,7 +37,11 @@ export const professions = [
         description: 'Minuslardan chiqmoqchi bulgan trederlar',
         icon: (
             <PsychologyIcon
-                sx={{ color: 'common.white', width: 40, height: 40 }}
+                sx={{
+                    color: 'common.white',
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                }}
             />
         ),
     },
@@ -38,7 +50,11 @@ export const professions = [
         description: 'Tajribasi bor lekin Shaxsiy Strategiyasi yoq trederlar',
         icon: (
             <EmojiEventsIcon
-                sx={{ color: 'common.white', width: 40, height: 40 }}
+                sx={{
+                    color: 'common.white',
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                }}
             />
         ),
     },
@@ -46,7 +62,15 @@ export const professions = [
         title: 'Mutaxasis',
         description:
             'Uzini shaxsiy Strategiyasini yaratmoqchi bulgan trederlar ',
-        icon: <DvrIcon sx={{ color: 'common.white', width: 40, height: 40 }} />,
+        icon: (
+            <DvrIcon
+                sx={{
+                    color: 'common.white',
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                }}
+            />
+        ),
     },
     {
         title: 'Mukammal',
@@ -54,7 +78,11 @@ export const professions = [
             'Yillar davomida óqib hali ham natijaga chiqolmagan trederlar',
         icon: (
             <PhonelinkIcon
-                sx={{ color: 'common.white', width: 40, height: 40 }}
+                sx={{
+                    color: 'common.white',
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                }}
             />
         ),
     },

@@ -10,7 +10,11 @@ const StudentCard = () => {
         <Box sx={cardWrapperStyles}>
             <Box sx={iconWrapperStyles}>
                 <LockOpenIcon
-                    sx={{ width: 60, height: 60, color: 'warning.main' }}
+                    sx={{
+                        width: { desktop: 60, tablet: 50, mobile: 40 },
+                        height: { desktop: 60, tablet: 50, mobile: 40 },
+                        color: 'warning.main',
+                    }}
                 />
             </Box>
             <Typography variant='h3' sx={titleH3Styles}>
@@ -46,10 +50,10 @@ export default StudentCard;
 const cardWrapperStyles = {
     position: 'relative',
     bgcolor: 'primary.main',
-    py: 10,
-    px: 8,
+    py: { desktop: 10, tablet: 8, mobile: 6 },
+    px: { desktop: 3.5, tablet: 2.75, mobile: 2 },
     borderRadius: 4,
-    maxWidth: 560,
+    maxWidth: 500,
 };
 
 const iconWrapperStyles = {
@@ -86,7 +90,11 @@ const discountPriceStyles = {
     color: 'primary.light',
     textAlign: 'center',
     mb: 2,
-    fontSize: '40px !important',
+    fontSize: {
+        desktop: '40px !important',
+        tablet: '35px !important',
+        mobile: '30px !important',
+    },
     mt: 3,
 };
 

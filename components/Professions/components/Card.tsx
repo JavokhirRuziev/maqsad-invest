@@ -35,21 +35,21 @@ const Card = ({ el }: CardType) => {
 export default Card;
 
 const cardWrapperStyles = {
-    width: 361,
+    width: { desktop: 360, tablet: 310, mobile: 250 },
     background: `linear-gradient(to right, ${theme.palette.secondary.main}, ${theme.palette.secondary.light})`,
     borderRadius: 4,
     position: 'relative',
-    p: 3,
+    p: { desktop: 3, tablet: 2.7, mobile: 2.5 },
 };
 
 const cardDescriptionStyles = {
     py: 2,
-    px: 4,
+    px: { desktop: 4, tablet: 3, mobile: 2.5 },
     borderLeft: `1px solid ${theme.palette.common.white}`,
     borderTop: `1px solid ${theme.palette.common.white}`,
     borderBottom: `1px solid ${theme.palette.common.white}`,
     borderRadius: 2,
-    height: 150,
+    height: { desktop: 150, tablet: 130, mobile: 110 },
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -58,8 +58,12 @@ const cardDescriptionStyles = {
 
 const cardIconWrapperStyles = {
     background: `linear-gradient(to right, ${theme.palette.secondary.light}, ${theme.palette.secondary.main})`,
-    p: 3,
-    border: `10px solid ${theme.palette.common.white}`,
+    p: { desktop: 3, tablet: 2.5, mobile: 2 },
+    border: {
+        desktop: `10px solid ${theme.palette.common.white}`,
+        tablet: `9px solid ${theme.palette.common.white}`,
+        mobile: `7px solid ${theme.palette.common.white}`,
+    },
     width: 'fit-content',
     borderRadius: 100,
     position: 'absolute',

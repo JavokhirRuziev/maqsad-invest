@@ -7,13 +7,7 @@ import { theme } from '@/theme';
 const TopBar = () => {
     return (
         <Box sx={topbarWrapperStyles}>
-            <Box
-                sx={{
-                    display: 'flex',
-                    gap: 2,
-                    alignItems: 'center',
-                }}
-            >
+            <Box sx={wrapperStyles}>
                 <LogoLight />
                 <Typography
                     variant='body1'
@@ -33,6 +27,12 @@ const TopBar = () => {
 };
 
 export default TopBar;
+
+const wrapperStyles = {
+    display: 'flex',
+    gap: 2,
+    alignItems: 'center',
+};
 
 const startTextStyles = {
     borderRadius: '50px',

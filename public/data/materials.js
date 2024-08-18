@@ -15,7 +15,11 @@ export const materials = [
             "Darslar qulay maxsus platformaga joylangan. O'zingizga qulay vaqtda ko'ra olasiz.",
         icon: (
             <PlayLessonIcon
-                sx={{ width: 150, height: 150, color: 'secondary.main' }}
+                sx={{
+                    width: { desktop: 150, tablet: 120, mobile: 100 },
+                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    color: 'secondary.main',
+                }}
             />
         ),
     },
@@ -25,7 +29,11 @@ export const materials = [
         description: 'Oyiga 2 martadan 8 martaga zoom uchrashuvlar o’tkazamiz',
         icon: (
             <CameraIcon
-                sx={{ width: 150, height: 150, color: 'secondary.main' }}
+                sx={{
+                    width: { desktop: 150, tablet: 120, mobile: 100 },
+                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    color: 'secondary.main',
+                }}
             />
         ),
     },
@@ -36,7 +44,11 @@ export const materials = [
             'Dastur davomida savollaringizga javob berish uchun ovozli chatlar uyishtiramiz',
         icon: (
             <GraphicEqIcon
-                sx={{ width: 150, height: 150, color: 'secondary.main' }}
+                sx={{
+                    width: { desktop: 150, tablet: 120, mobile: 100 },
+                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    color: 'secondary.main',
+                }}
             />
         ),
     },
@@ -47,7 +59,11 @@ export const materials = [
             "Dasturga qo'shimcha sifatida gaydlar va cheklistlar beriladi.",
         icon: (
             <LibraryBooksIcon
-                sx={{ width: 150, height: 150, color: 'secondary.main' }}
+                sx={{
+                    width: { desktop: 150, tablet: 120, mobile: 100 },
+                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    color: 'secondary.main',
+                }}
             />
         ),
     },
@@ -58,7 +74,11 @@ export const materials = [
             "Kuchli kuratorlar sizga natijaga erishishingizga yordam berishadi va qo'llab-quvvatlashadi.",
         icon: (
             <CastForEducationIcon
-                sx={{ width: 150, height: 150, color: 'secondary.main' }}
+                sx={{
+                    width: { desktop: 150, tablet: 120, mobile: 100 },
+                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    color: 'secondary.main',
+                }}
             />
         ),
     },
@@ -69,7 +89,11 @@ export const materials = [
             "Telegramda siz bilan hamfikr insonlar bilan birga yopiq guruhda bo'lasiz.",
         icon: (
             <LockResetIcon
-                sx={{ width: 150, height: 150, color: 'secondary.main' }}
+                sx={{
+                    width: { desktop: 150, tablet: 120, mobile: 100 },
+                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    color: 'secondary.main',
+                }}
             />
         ),
     },
@@ -80,7 +104,11 @@ export const materials = [
             "Dasturga 10 ta sirli mexmon spikerlar chaqirilgan. O'qish davomida ular bilan tanishasiz",
         icon: (
             <Diversity3Icon
-                sx={{ width: 150, height: 150, color: 'secondary.main' }}
+                sx={{
+                    width: { desktop: 150, tablet: 120, mobile: 100 },
+                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    color: 'secondary.main',
+                }}
             />
         ),
     },
@@ -91,7 +119,11 @@ export const materials = [
             "Dastur davomida sizga kutilmagan ko'plab bonuslar tayyorlab qo'yganmiz.",
         icon: (
             <CardGiftcardIcon
-                sx={{ width: 150, height: 150, color: 'secondary.main' }}
+                sx={{
+                    width: { desktop: 150, tablet: 120, mobile: 100 },
+                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    color: 'secondary.main',
+                }}
             />
         ),
     },

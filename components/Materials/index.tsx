@@ -92,7 +92,7 @@ const pointerContainerStyles = {
 };
 
 const materialsTextStyles = {
-    maxWidth: 755,
+    maxWidth: { desktop: 755, tablet: 655, mobile: 555 },
     textAlign: 'center',
     mx: 'auto',
     color: 'common.white',

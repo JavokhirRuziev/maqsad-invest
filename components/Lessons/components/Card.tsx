@@ -76,12 +76,12 @@ export default Card;
 
 const wrapperStyles = {
     bgcolor: 'common.black',
-    py: 5,
+    py: { desktop: 5, tablet: 4, mobile: 3.5 },
     px: 3,
     borderRadius: 2,
     mx: 'auto',
-    minHeight: 410,
-    width: 786,
+    minHeight: { desktop: 410, tablet: 360, mobile: 310 },
+    width: { desktop: 738, tablet: 638, mobile: 538 },
 };
 
 const moduleWrapperStyles = {
@@ -99,7 +99,11 @@ const titleMainStyles = {
     textTransform: 'uppercase',
     color: 'common.white',
     mb: 4,
-    fontSize: '40px !important',
+    fontSize: {
+        desktop: '40px !important',
+        tablet: '35px !important',
+        mobile: '30px !important',
+    },
 };
 
 const listTextStyles = {
@@ -107,14 +111,14 @@ const listTextStyles = {
     display: 'flex',
     alignItems: 'center',
     gap: 1,
-    mb: 2,
+    mb: { desktop: 2, tablet: 1.5, mobile: 1 },
 };
 
 const resultsWrapperStyles = {
     bgcolor: 'secondary.main',
-    p: 2,
+    p: { desktop: 2, tablet: 1.8, mobile: 1.5 },
     borderRadius: 3,
-    width: 250,
+    width: { desktop: 250, tablet: 200, mobile: 150 },
 };
 
 const iconWrapperStyles = {
@@ -125,14 +129,14 @@ const iconWrapperStyles = {
 
 const iconStyles = {
     bgcolor: 'primary.main',
-    width: 40,
-    height: 40,
+    width: { desktop: 40, tablet: 35, mobile: 30 },
+    height: { desktop: 40, tablet: 35, mobile: 30 },
 };
 
 const rightBlockWrapperStyles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    height: 250,
+    height: { desktop: 250, tablet: 220, mobile: 190 },
     mr: 3,
 };

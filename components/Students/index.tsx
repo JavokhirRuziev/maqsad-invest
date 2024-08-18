@@ -115,7 +115,7 @@ const titleStudentStyles = {
 };
 const studentCardWrapperStyles = {
     display: 'flex',
-    gap: 8,
+    gap: { desktop: 8, tablet: 6, mobile: 4 },
     flexWrap: 'wrap',
     justifyContent: 'center',
 };

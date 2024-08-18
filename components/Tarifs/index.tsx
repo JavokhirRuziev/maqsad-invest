@@ -21,14 +21,7 @@ const index = () => {
             <Typography variant='h3' mb={10} textAlign={'center'}>
                 Natijaga chiqish faqat sizning xoxishingizga bog’liq!
             </Typography>
-            <Box
-                sx={{
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    gap: 5,
-                    justifyContent: 'center',
-                }}
-            >
+            <Box sx={cardWrapperStyles}>
                 <VipCard />
                 <StudentCard />
             </Box>
@@ -41,8 +34,15 @@ export default index;
 const textH1Styles = {
     color: 'common.black',
     textTransform: 'uppercase',
-    maxWidth: 980,
+    maxWidth: { desktop: 1200, tablet: 1000, mobile: 800 },
     mx: 'auto',
     textAlign: 'center',
     mb: 4,
+};
+
+const cardWrapperStyles = {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: { desktop: 8, tablet: 6, mobile: 4 },
+    justifyContent: 'center',
 };

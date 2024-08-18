@@ -6,8 +6,10 @@ import VideocamIcon from '@mui/icons-material/Videocam';
 
 const BannerDescription = () => {
     return (
-        <Box sx={{ display: 'flex', mt: 10 }}>
-            <Box sx={{ maxWidth: 750 }}>
+        <Box
+            sx={{ display: 'flex', mt: { desktop: 10, tablet: 6, mobile: 4 } }}
+        >
+            <Box sx={{ maxWidth: { desktop: 750, tablet: 650, mobile: 550 } }}>
                 <Box sx={{ position: 'relative' }}>
                     <Typography
                         variant='h1'
@@ -32,7 +34,7 @@ const BannerDescription = () => {
                         joylar soni cheklangan. Bunday imkoniyatni quldan boy
                         bermang
                     </Typography>
-                    <Button>Joyni band qilish</Button>
+                    <Button size='medium'>Joyni band qilish</Button>
                 </Box>
             </Box>
         </Box>

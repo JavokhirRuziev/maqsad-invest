@@ -9,7 +9,11 @@ const Bottom = () => {
         <Box sx={{ maxWidth: 800, mx: 'auto', mt: 10 }}>
             <Box sx={iconWrapperStyles}>
                 <RestoreIcon
-                    sx={{ width: 130, height: 130, color: 'info.light' }}
+                    sx={{
+                        width: { desktop: 130, tablet: 110, mobile: 90 },
+                        height: { desktop: 130, tablet: 110, mobile: 90 },
+                        color: 'info.light',
+                    }}
                 />
             </Box>
             <Typography variant='h1' sx={textH1Styles}>

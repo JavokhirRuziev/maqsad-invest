@@ -27,9 +27,7 @@ const VipCard = () => {
             <Typography variant='h1' sx={priceStyles}>
                 $1500
             </Typography>
-            <Button sx={{ borderRadius: 100, mb: 3 }} size='small'>
-                vip tarifni tanlash
-            </Button>
+            <Button sx={buttonStyles}>vip tarifni tanlash</Button>
             <Typography
                 variant='body1'
                 textAlign={'center'}
@@ -46,18 +44,18 @@ export default VipCard;
 const vipTarifArr = [
     '0-15 modul',
     'Treker nazorati',
-    'Mirsaid Mirodilov bilan savol va javob chati',
+    'SAYYORA ABDURAXMONOVADAN bilan savol va javob chati',
     'Bonus modul (Klientga xat)',
     'Kurs so’ngida sertifikat',
-    '5 ta jonli kouch sessiya Mirsaid Mirodilov bilan',
+    '5 ta jonli kouch sessiya SAYYORA ABDURAXMONOVADAN bilan',
     'Maxsus bloknot va ruchka',
     'Bitta ekspertning tahlili',
     'InstaMedia jamoasiga qo’shilish imkoniyati',
 ];
 
 const vipTarifWrapperStyles = {
-    py: 5,
-    px: 7,
+    py: { desktop: 5, tablet: 4, mobile: 3 },
+    px: { deskot: 7, tablet: 5.5, mobile: 4 },
     bgcolor: 'common.black',
     borderRadius: 3,
     width: 'fit-content',
@@ -77,8 +75,12 @@ const titleStyles = {
 
 const listTextStyles = {
     maxWidth: 230,
-    mb: 2.5,
-    fontSize: '16px !important',
+    mb: { desktop: 2.5, tablet: 2, mobile: 1.5 },
+    fontSize: {
+        desktop: '16px !important',
+        tablet: '14px !important',
+        mobile: '12px !important',
+    },
     color: 'common.white',
 };
 
@@ -93,4 +95,11 @@ const priceStyles = {
     color: 'primary.main',
     textAlign: 'center',
     mb: 6,
+};
+
+const buttonStyles = {
+    borderRadius: 100,
+    mb: 3,
+    p: '20px 30px !important',
+    fontSize: '20px !important',
 };

@@ -49,20 +49,21 @@ const textH2Styles = { color: 'common.black', textAlign: 'center', mb: 2 };
 const textH1Styles = {
     color: 'common.black',
     textTransform: 'uppercase',
-    maxWidth: 800,
+    maxWidth: { desktop: 800, tablet: 700, mobile: 550 },
     mx: 'auto',
 };
 
 const cardWrapperStyles = {
     display: 'flex',
     my: 10,
-    gap: 8,
+    columnGap: { desktop: 8, tablet: 6, mobile: 4 },
+    rowGap: { desktop: 8, tablet: 8, mobile: 7 },
     flexWrap: 'wrap',
+    justifyContent: 'center',
 };
 const vaweDecorationStyles = {
     position: 'absolute',
     bottom: -140,
-
     left: '50%',
     transform: 'translateX(-50%)',
 };

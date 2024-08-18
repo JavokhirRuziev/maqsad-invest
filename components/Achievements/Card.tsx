@@ -36,11 +36,11 @@ const Card = ({ el }: CardTypes) => {
 export default Card;
 
 const wrapperStyles = {
-    p: 3,
+    p: { desktop: 3, tablet: 2.5, mobile: 2 },
     position: 'relative',
     overflow: 'hidden',
-    width: 540,
-    height: 260,
+    width: { desktop: 540, tablet: 500, mobile: 440 },
+    height: { desktop: 260, tablet: 230, mobile: 200 },
     borderRadius: 3,
     display: 'flex',
     alignItems: 'center',
@@ -61,7 +61,11 @@ const imageWrapperStyles = {
     position: 'absolute',
     right: 0,
     top: 0,
-    img: { width: 300, height: 309, objectFit: 'cover' },
+    img: {
+        width: { desktop: 300, tablet: 270, mobile: 230 },
+        height: { desktop: 310, tablet: 280, mobile: 250 },
+        objectFit: 'cover',
+    },
 };
 
 const textOverlayStyles = {
@@ -82,8 +86,8 @@ const textContainerStyles = {
     left: 0,
     bottom: 0,
     zIndex: 3,
-    m: 3,
-    p: 3,
+    m: { desktop: 3, tablet: 2.5, mobile: 2 },
+    p: { desktop: 3, tablet: 2.5, mobile: 2 },
     border: `1px solid ${theme.palette.common.white}`,
     width: '40%',
     borderRadius: 2,
@@ -93,7 +97,11 @@ const titleH1Styles = {
     color: 'common.white',
     textTransform: 'uppercase',
     mb: 3,
-    fontSize: '35px !important',
+    fontSize: {
+        desktop: '35px !important',
+        tablet: '30px !important',
+        mobile: '25px !important',
+    },
 };
 
 const iconStyles = {

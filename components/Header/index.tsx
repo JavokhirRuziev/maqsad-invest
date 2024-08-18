@@ -19,7 +19,12 @@ const index = () => {
                 className='main-bg'
             />
 
-            <Container sx={{ position: 'relative', height: '100vh' }}>
+            <Container
+                sx={{
+                    position: 'relative',
+                    minHeight: { desktop: 800, tablet: 700, mobile: 544 },
+                }}
+            >
                 <Box py='15px'>
                     <TopBar />
                     <BannerDescription />
@@ -58,11 +63,11 @@ export default index;
 
 const backgroundWrapperStyles = {
     width: '100vw',
-    height: '100vh',
     position: 'relative',
     '.main-bg': { zIndex: -1 },
     overflow: 'hidden',
     pb: 7,
+    minHeight: { desktop: 800, tablet: 700, mobile: 544 },
 };
 
 const decorationStyles = {
@@ -75,12 +80,12 @@ const decorationStyles = {
 
 const imageContainerStyles = {
     '.human-image': {
-        width: 721,
-        height: 843,
+        width: { desktop: 721, tablet: 621, mobile: 521 },
+        height: { desktop: 843, tablet: 743, mobile: 643 },
         objectFit: 'cover',
     },
     position: 'absolute',
-    bottom: -100,
+    bottom: { desktop: -10, tablet: -5, mobile: -50 },
     right: 0,
     zIndex: -1,
 };

@@ -1,5 +1,4 @@
 import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
-import Student from '../icons/Student';
 import Groups2Icon from '@mui/icons-material/Groups2';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import UploadIcon from '@mui/icons-material/Upload';
@@ -10,41 +9,78 @@ import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import HourglassFullIcon from '@mui/icons-material/HourglassFull';
 import DevicesIcon from '@mui/icons-material/Devices';
 import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
+import SchoolIcon from '@mui/icons-material/School';
 
 export const results = [
     {
         title: 'Shaxsiy kursingizni sota olasiz',
         icon: (
             <CollectionsBookmarkIcon
-                sx={{ width: 40, height: 40, color: 'info.main' }}
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
             />
         ),
     },
     {
         title: 'Shogirdlik dasturini ocha olasiz',
-        icon: <Student />,
+        icon: (
+            <SchoolIcon
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
+            />
+        ),
     },
     {
         title: 'Jamoa toplashni o’rganasiz',
         icon: (
-            <Groups2Icon sx={{ width: 40, height: 40, color: 'info.main' }} />
+            <Groups2Icon
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
+            />
         ),
     },
     {
         title: 'Prodyuser sifatida ishlay olasiz',
         icon: (
-            <FlashOnIcon sx={{ width: 40, height: 40, color: 'info.main' }} />
+            <FlashOnIcon
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
+            />
         ),
     },
     {
         title: 'Xizmatlaringizni qimmat sotasiz',
-        icon: <UploadIcon sx={{ width: 40, height: 40, color: 'info.main' }} />,
+        icon: (
+            <UploadIcon
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
+            />
+        ),
     },
     {
         title: 'Kontent menejer bo’la olasiz',
         icon: (
             <ReceiptLongIcon
-                sx={{ width: 40, height: 40, color: 'info.main' }}
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
             />
         ),
     },
@@ -52,7 +88,11 @@ export const results = [
         title: 'Progrevlar ssenaristi bo’lib ishlay olasiz',
         icon: (
             <HistoryEduIcon
-                sx={{ width: 40, height: 40, color: 'info.main' }}
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
             />
         ),
     },
@@ -60,7 +100,11 @@ export const results = [
         title: 'Katta auditoriya yig’a olasiz',
         icon: (
             <ReduceCapacityIcon
-                sx={{ width: 40, height: 40, color: 'info.main' }}
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
             />
         ),
     },
@@ -68,7 +112,11 @@ export const results = [
         title: 'Samarali reelslar o’ylab topa olasiz',
         icon: (
             <OndemandVideoIcon
-                sx={{ width: 40, height: 40, color: 'info.main' }}
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
             />
         ),
     },
@@ -76,21 +124,35 @@ export const results = [
         title: 'Onlayn kurslar metodologi',
         icon: (
             <HourglassFullIcon
-                sx={{ width: 40, height: 40, color: 'info.main' }}
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
             />
         ),
     },
     {
         title: 'Vebinarlar orqali sotuv qila olasiz',
         icon: (
-            <DevicesIcon sx={{ width: 40, height: 40, color: 'info.main' }} />
+            <DevicesIcon
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
+            />
         ),
     },
     {
         title: 'Daromadingizni 5-10 barobarga oshirasiz',
         icon: (
             <RequestQuoteIcon
-                sx={{ width: 40, height: 40, color: 'info.main' }}
+                sx={{
+                    width: { desktop: 40, tablet: 35, mobile: 30 },
+                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    color: 'info.main',
+                }}
             />
         ),
     },

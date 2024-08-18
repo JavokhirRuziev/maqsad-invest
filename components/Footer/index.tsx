@@ -42,17 +42,29 @@ const contactsArr = [
 ];
 
 const titleStyles = {
-    fontSize: '40px !important',
+    fontSize: {
+        desktop: '40px !important',
+        tablet: '35px !important',
+        mobile: '30px !important',
+    },
     color: 'common.white',
     mb: 3,
 };
 
 const textH4Styles = {
-    fontSize: '18px !important',
+    fontSize: {
+        desktop: '18px !important',
+        tablet: '16px !important',
+        mobile: '14px !important',
+    },
     color: 'common.white',
     mb: 5,
 };
 const contactsTextStyles = {
-    fontSize: '18px !important',
+    fontSize: {
+        desktop: '18px !important',
+        tablet: '16px !important',
+        mobile: '14px !important',
+    },
     color: 'common.white',
 };

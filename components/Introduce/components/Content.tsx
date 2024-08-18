@@ -11,7 +11,7 @@ const Content = () => {
             <Box sx={contentWrapperStyles}>
                 <Box zIndex={2}>
                     <Typography variant='h1' sx={titleWrapperStyles}>
-                        Mirsaid mirodilov
+                        SAYYORA ABDURAXMONOVADAN
                     </Typography>
                     {introduce?.map((el) => (
                         <Typography
@@ -61,21 +61,8 @@ const Content = () => {
 
 export default Content;
 
-const imageWrapperStyles = {
-    position: 'absolute',
-    top: -200,
-    left: '50%',
-    bottom: 0,
-    transform: 'translateX(-50%)',
-    img: {
-        width: 513,
-        height: 640,
-        objectFit: 'contain',
-    },
-};
-
 const contentContainerStyles = {
-    p: 3,
+    p: { desktop: 3, tablet: 2.5, mobile: 2 },
     bgcolor: 'common.black',
     borderRadius: 4,
     position: 'relative',
@@ -89,6 +76,7 @@ const overlayStyles = {
     bottom: 0,
     right: 0,
     left: 0,
+    borderRadius: 4,
 };
 
 const rightBlockWrapperStyles = {
@@ -112,8 +100,8 @@ const text30Styles = {
 };
 
 const contentWrapperStyles = {
-    px: 6,
-    py: 3,
+    px: { desktop: 6, tablet: 4, mobile: 3 },
+    py: { desktop: 3, tablet: 2.5, mobile: 2 },
     border: `1px solid ${theme.palette.secondary.main}`,
     borderRadius: 3,
     display: 'flex',
@@ -125,13 +113,27 @@ const titleWrapperStyles = {
     fontSize: '30px !important',
     color: 'common.white',
     mb: 2,
+    maxWidth: { desktop: 500, tablet: 300, mobile: 300 },
 };
 
 const listTextStyles = {
     color: 'common.white',
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     gap: 1,
-    mb: 2,
-    maxWidth: 380,
+    mb: { desktop: 2, tablet: 1.5, mobile: 1 },
+    maxWidth: { desktop: 380, tablet: 280, mobile: 280 },
+};
+
+const imageWrapperStyles = {
+    position: 'absolute',
+    top: { desktop: -200, tablet: -150, mobile: -200 },
+    left: { desktop: '55%', tablet: '55%', mobile: '60%' },
+    bottom: 0,
+    transform: 'translateX(-50%)',
+    img: {
+        width: 350,
+        height: 600,
+        objectFit: 'contain',
+    },
 };

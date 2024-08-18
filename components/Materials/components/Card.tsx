@@ -34,8 +34,8 @@ const Card = ({ el }: CardTypes) => {
 export default Card;
 
 const cardWrapperStyles = {
-    maxWidth: 460,
-    p: 3,
+    maxWidth: { desktop: 430, tablet: 390, mobile: 340 },
+    p: { desktop: 3, tablet: 2.5, mobile: 2 },
     background: `linear-gradient(to right, ${theme.palette.common.black}, ${theme.palette.primary.main})`,
     borderRadius: 2,
     display: 'flex',
