@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import InterviewsCard from './components/Interviews';
+import StudentsCard from './components/StudentsCard';
+import { students } from '@/public/data/students';
 
 const Index = () => {
     return (
@@ -36,6 +38,14 @@ const Index = () => {
                     <Box sx={cardWrapperStyles}>
                         {interviewsArr?.map((el) => (
                             <InterviewsCard {...{ el }} />
+                        ))}
+                    </Box>
+                    <Typography variant='h1' sx={titleStudentStyles}>
+                        O'quvchilarimning natijalari
+                    </Typography>
+                    <Box sx={studentCardWrapperStyles}>
+                        {students?.map((el) => (
+                            <StudentsCard {...{ el }} />
                         ))}
                     </Box>
                 </Box>
@@ -93,4 +103,19 @@ const cardWrapperStyles = {
     gap: 3,
     justifyContent: 'center',
     mt: 6,
+};
+
+const titleStudentStyles = {
+    mt: 10,
+    mb: 6,
+    color: 'common.white',
+    textAlign: 'center',
+    maxWidth: 600,
+    mx: 'auto',
+};
+const studentCardWrapperStyles = {
+    display: 'flex',
+    gap: 8,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
 };
