@@ -12,14 +12,14 @@ import { materials } from '@/public/data/materials';
 
 const index = () => {
     return (
-        <SecondaryBg sx={{ pt: 20, pb: 7 }}>
+        <SecondaryBg sx={bgWrapperStyles}>
             <Container>
                 <Typography variant='h1' sx={youPointerTitleStyles}>
                     Sizni
                 </Typography>
                 <Box sx={pointerContainerStyles}>
                     <Image
-                        src={'/images/pointer.png'}
+                        src={'/images/pointer.webp'}
                         alt='pointer'
                         objectFit='cover'
                         layout='fill'
@@ -27,14 +27,12 @@ const index = () => {
                 </Box>
                 <Box sx={raceContainerStyles}>
                     <Typography variant='h2' sx={aPointStyles}>
-                        <SportsScoreIcon sx={{ mr: 1 }} />A nuqtadan{' '}
+                        <SportsScoreIcon sx={iconStyles} />A nuqtadan{' '}
                     </Typography>
-                    <Divider
-                        sx={{ width: 244, bgcolor: 'primary.light', height: 5 }}
-                    />
+                    <Divider sx={dividerStyles} />
                     <Typography variant='h2' sx={bPointStyles}>
                         <EmojiEventsIcon
-                            sx={{ mr: 1, color: 'warning.main' }}
+                            sx={{ ...iconStyles, color: 'warning.main' }}
                         />{' '}
                         B nuqtaga
                     </Typography>
@@ -61,26 +59,53 @@ const index = () => {
 
 export default index;
 
+const dividerStyles = {
+    width: {
+        desktop: 244,
+        tablet: 244,
+        mobile: 244,
+        mobileSmall: 100,
+    },
+    bgcolor: 'primary.light',
+    height: { desktop: 5, tablet: 5, mobile: 5, mobileSmall: 2.5 },
+};
+
+const bgWrapperStyles = {
+    pt: {
+        desktop: 20,
+        tablet: 20,
+        mobile: 18,
+        mobileSmall: 16,
+    },
+    pb: { desktop: 7, tablet: 7, mobile: 7, mobileSmall: 0 },
+};
+
 const raceContainerStyles = {
     display: 'flex',
     alignItems: 'center',
-    gap: 3,
+    gap: { desktop: 3, tablet: 3, mobile: 3, mobileSmall: 1.5 },
     justifyContent: 'center',
     mb: 4,
 };
 
 const aPointStyles = {
-    p: 2,
+    p: { desktop: 2, tablet: 2, mobile: 2, mobileSmall: 1 },
     borderRadius: 2,
     bgcolor: 'secondary.light',
     color: 'common.white',
+    display: 'flex',
+    alignItems: 'center',
+    whiteSpace: 'nowrap',
 };
 const bPointStyles = {
     fontFamily: `'UbuntuBold', sans-serif !important`,
-    p: 2,
+    p: { desktop: 2, tablet: 2, mobile: 2, mobileSmall: 1 },
     borderRadius: 2,
     bgcolor: 'common.black',
     color: 'common.white',
+    display: 'flex',
+    alignItems: 'center',
+    whiteSpace: 'nowrap',
 };
 
 const pointerContainerStyles = {
@@ -111,4 +136,19 @@ const cardWrapperStyles = {
     flexWrap: 'wrap',
     mt: 10,
     justifyContent: 'center',
+};
+
+const iconStyles = {
+    mr: {
+        desktop: 1,
+        tablet: 1,
+        mobile: 1,
+        mobileSmall: 0.5,
+    },
+    width: {
+        desktop: 24,
+        tablet: 24,
+        mobile: 24,
+        mobileSmall: 16,
+    },
 };

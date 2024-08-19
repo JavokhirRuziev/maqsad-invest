@@ -49,15 +49,15 @@ const textH2Styles = { color: 'common.black', textAlign: 'center', mb: 2 };
 const textH1Styles = {
     color: 'common.black',
     textTransform: 'uppercase',
-    maxWidth: { desktop: 800, tablet: 700, mobile: 550 },
+    maxWidth: { desktop: 800, tablet: 700, mobile: 550, mobileSmall: 400 },
     mx: 'auto',
 };
 
 const cardWrapperStyles = {
     display: 'flex',
-    my: 10,
-    columnGap: { desktop: 8, tablet: 6, mobile: 4 },
-    rowGap: { desktop: 8, tablet: 8, mobile: 7 },
+    my: { desktop: 10, tablet: 9, mobile: 8, mobileSmall: 6 },
+    columnGap: { desktop: 8, tablet: 6, mobile: 4, mobileSmall: 3 },
+    rowGap: { desktop: 8, tablet: 8, mobile: 7, mobileSmall: 4 },
     flexWrap: 'wrap',
     justifyContent: 'center',
 };

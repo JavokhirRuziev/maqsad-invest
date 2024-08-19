@@ -25,7 +25,7 @@ const Content = () => {
                     ))}
                 </Box>
                 <Box sx={imageWrapperStyles}>
-                    <img src={'/images/Human.png'} alt='human' />
+                    <img src={'/images/humasn.webp'} alt='human' />
                 </Box>
                 <Box sx={rightBlockWrapperStyles}>
                     <Box sx={text100Styles}>
@@ -100,12 +100,18 @@ const text30Styles = {
 };
 
 const contentWrapperStyles = {
-    px: { desktop: 6, tablet: 4, mobile: 3 },
-    py: { desktop: 3, tablet: 2.5, mobile: 2 },
+    px: { desktop: 6, tablet: 4, mobile: 3, mobileSmall: 2 },
+    py: { desktop: 3, tablet: 2.5, mobile: 2, mobileSmall: 2 },
     border: `1px solid ${theme.palette.secondary.main}`,
     borderRadius: 3,
     display: 'flex',
     justifyContent: 'space-between',
+    flexDirection: {
+        desktop: 'unset',
+        tablet: 'unset',
+        mobile: 'unset',
+        mobileSmall: 'column',
+    },
 };
 
 const titleWrapperStyles = {

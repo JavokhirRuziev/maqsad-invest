@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 export let theme = createTheme({
     breakpoints: {
         values: {
+            mobileSmall: 0,
             mobile: 700,
             tablet: 1100,
             desktop: 1440,
@@ -61,7 +62,7 @@ theme = createTheme(theme, {
             styleOverrides: {
                 maxWidthXl: {
                     [theme.breakpoints.down('tablet')]: {
-                        padding: '0 16px',
+                        padding: '0 25px',
                         maxWidth: '100%',
                     },
                     [theme.breakpoints.between('tablet', 'desktop')]: {
@@ -93,9 +94,13 @@ theme = createTheme(theme, {
                         fontSize: 25,
                         padding: '30px 70px',
                     },
-                    [theme.breakpoints.down('tablet')]: {
+                    [theme.breakpoints.between('mobile', 'tablet')]: {
                         fontSize: 20,
                         padding: '20px 50px',
+                    },
+                    [theme.breakpoints.up('mobileSmall')]: {
+                        fontSize: 16,
+                        padding: '15px 30px',
                     },
                 },
             },
@@ -103,7 +108,11 @@ theme = createTheme(theme, {
         MuiTypography: {
             styleOverrides: {
                 h1: {
-                    [theme.breakpoints.down('tablet')]: {
+                    [theme.breakpoints.up('mobileSmall')]: {
+                        fontSize: 22,
+                        fontFamily: `'UbuntuBold', sans-serif`,
+                    },
+                    [theme.breakpoints.between('mobile', 'tablet')]: {
                         fontSize: 40,
                         fontFamily: `'UbuntuBold', sans-serif`,
                     },
@@ -117,7 +126,11 @@ theme = createTheme(theme, {
                     },
                 },
                 h2: {
-                    [theme.breakpoints.down('tablet')]: {
+                    [theme.breakpoints.up('mobileSmall')]: {
+                        fontSize: 16,
+                        fontFamily: `'UbuntuLight', sans-serif`,
+                    },
+                    [theme.breakpoints.between('mobile', 'tablet')]: {
                         fontSize: 20,
                         fontFamily: `'UbuntuLight', sans-serif`,
                     },
@@ -131,7 +144,11 @@ theme = createTheme(theme, {
                     },
                 },
                 h3: {
-                    [theme.breakpoints.down('tablet')]: {
+                    [theme.breakpoints.up('mobileSmall')]: {
+                        fontSize: 14,
+                        fontFamily: `'UbuntuBold', sans-serif`,
+                    },
+                    [theme.breakpoints.between('mobile', 'tablet')]: {
                         fontSize: 18,
                         fontFamily: `'UbuntuRegular', sans-serif`,
                     },

@@ -32,14 +32,8 @@ const Card = ({ el }: CardTypes) => {
             <Typography variant='h1' sx={titleMainStyles}>
                 {el?.title}
             </Typography>
-            <Box
-                sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    width: '100%',
-                }}
-            >
-                <Box width={'50%'}>
+            <Box sx={contentWrapperStyles}>
+                <Box sx={leftBlockStyles}>
                     <Typography variant='h4' color={'common.white'} mb={3}>
                         Qanday mavzularni o’z ichiga oladi:
                     </Typography>
@@ -74,14 +68,36 @@ const Card = ({ el }: CardTypes) => {
 
 export default Card;
 
+const leftBlockStyles = {
+    width: {
+        desktop: '50%',
+        tablet: '50%',
+        mobile: '50%',
+        mobileSmall: 'auto',
+    },
+};
+
+const contentWrapperStyles = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%',
+    flexDirection: {
+        desktop: 'unset',
+        tablet: 'unset',
+        mobile: 'unset',
+        mobileSmall: 'column',
+    },
+    rowGap: 3,
+};
+
 const wrapperStyles = {
     bgcolor: 'common.black',
-    py: { desktop: 5, tablet: 4, mobile: 3.5 },
-    px: 3,
+    py: { desktop: 5, tablet: 4, mobile: 3.5, mobileSmall: 2 },
+    px: { desktop: 3, tablet: 3, mobile: 3, mobileSmall: 2 },
     borderRadius: 2,
     mx: 'auto',
-    minHeight: { desktop: 410, tablet: 360, mobile: 310 },
-    width: { desktop: 738, tablet: 638, mobile: 538 },
+    minHeight: { desktop: 410, tablet: 360, mobile: 310, mobileSmall: 'auto' },
+    width: { desktop: 738, tablet: 638, mobile: 538, mobileSmall: 'auto' },
 };
 
 const moduleWrapperStyles = {
@@ -111,12 +127,12 @@ const listTextStyles = {
     display: 'flex',
     alignItems: 'center',
     gap: 1,
-    mb: { desktop: 2, tablet: 1.5, mobile: 1 },
+    mb: { desktop: 2, tablet: 1.5, mobile: 1, mobileSmall: 0.5 },
 };
 
 const resultsWrapperStyles = {
     bgcolor: 'secondary.main',
-    p: { desktop: 2, tablet: 1.8, mobile: 1.5 },
+    p: { desktop: 2, tablet: 1.8, mobile: 1.5, mobileSmall: 1 },
     borderRadius: 3,
     width: { desktop: 250, tablet: 200, mobile: 150 },
 };
@@ -137,6 +153,6 @@ const rightBlockWrapperStyles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    height: { desktop: 250, tablet: 220, mobile: 190 },
+    height: { desktop: 250, tablet: 220, mobile: 190, mobileSmall: 130 },
     mr: 3,
 };

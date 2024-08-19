@@ -49,14 +49,14 @@ const oldNewArr = [
         title: 'eski xayot',
         description:
             'Xayotingizdan eng zo’r imkoniyat kelganda keyingi safar deb, orzularingizni hammasini hayolda qoldirish',
-        img: '/images/old.png',
+        img: '/images/old.webp',
         color: 'error.main',
     },
     {
         title: 'yangi xayot',
         description:
             '2024 yilda katta daromadga ega bo’lgan xolda shu kunda eng to’g’ri qaror qilganingizni eslab o’tirish',
-        img: '/images/new.png',
+        img: '/images/new.webp',
         color: 'warning.light',
     },
 ];

@@ -6,7 +6,7 @@ const LogoLight = () => {
     return (
         <Box sx={logoWrapperStyles}>
             <Image
-                src={'/images/logo-light.png'}
+                src={'/images/logo-light.webp'}
                 alt='logo-light'
                 objectFit='cover'
                 layout='fill'

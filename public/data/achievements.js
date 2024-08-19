@@ -7,12 +7,12 @@ export const achievements = [
     {
         title: '$100K',
         description: '19 yoshimda birinchi $100.000 ishlab topdim',
-        img: '/images/fake-2.jpeg',
+        img: '/images/fake-2.webp',
     },
     {
         title: 'mashina',
         description: 'O’zimga malibu 2 premier sotib oldim',
-        img: '/images/fake-3.jpeg',
+        img: '/images/fake.webp',
     },
     {
         title: 'ekspertlar',
@@ -22,12 +22,12 @@ export const achievements = [
     {
         title: 'ofis',
         description: '30 ta xodimga ega 3 qavatli ofis oldim',
-        img: '/images/fake-2.jpeg',
+        img: '/images/fake-2.webp',
     },
     {
         title: 'netvorking',
         description: 'Premium joylarga borish va kuchli tanishlar orttirish',
-        img: '/images/fake-3.jpeg',
+        img: '/images/fake.webp',
     },
     {
         title: 'onamga',
@@ -37,12 +37,12 @@ export const achievements = [
     {
         title: '1500+ ta',
         description: 'odamga Qirg’izistonda chiqish',
-        img: '/images/fake-2.jpeg',
+        img: '/images/fake-2.webp',
     },
     {
         title: '400+ ta',
         description: 'odamga O’zbekistonda chiqish',
-        img: '/images/fake-3.jpeg',
+        img: '/images/fake.webp',
     },
     {
         title: '8000+ ta',

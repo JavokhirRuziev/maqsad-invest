@@ -13,8 +13,18 @@ export const professions = [
             <RocketLaunchIcon
                 sx={{
                     color: 'common.white',
-                    width: { desktop: 40, tablet: 35, mobile: 30 },
-                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    width: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
+                    height: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
                 }}
             />
         ),
@@ -26,8 +36,18 @@ export const professions = [
             <PhoneIphoneIcon
                 sx={{
                     color: 'common.white',
-                    width: { desktop: 40, tablet: 35, mobile: 30 },
-                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    width: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
+                    height: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
                 }}
             />
         ),
@@ -39,8 +59,18 @@ export const professions = [
             <PsychologyIcon
                 sx={{
                     color: 'common.white',
-                    width: { desktop: 40, tablet: 35, mobile: 30 },
-                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    width: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
+                    height: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
                 }}
             />
         ),
@@ -52,8 +82,18 @@ export const professions = [
             <EmojiEventsIcon
                 sx={{
                     color: 'common.white',
-                    width: { desktop: 40, tablet: 35, mobile: 30 },
-                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    width: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
+                    height: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
                 }}
             />
         ),
@@ -66,8 +106,18 @@ export const professions = [
             <DvrIcon
                 sx={{
                     color: 'common.white',
-                    width: { desktop: 40, tablet: 35, mobile: 30 },
-                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    width: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
+                    height: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
                 }}
             />
         ),
@@ -80,8 +130,18 @@ export const professions = [
             <PhonelinkIcon
                 sx={{
                     color: 'common.white',
-                    width: { desktop: 40, tablet: 35, mobile: 30 },
-                    height: { desktop: 40, tablet: 35, mobile: 30 },
+                    width: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
+                    height: {
+                        desktop: 40,
+                        tablet: 35,
+                        mobile: 30,
+                        mobileSmall: 20,
+                    },
                 }}
             />
         ),

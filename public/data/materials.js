@@ -16,8 +16,18 @@ export const materials = [
         icon: (
             <PlayLessonIcon
                 sx={{
-                    width: { desktop: 150, tablet: 120, mobile: 100 },
-                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    width: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
+                    height: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
                     color: 'secondary.main',
                 }}
             />
@@ -30,8 +40,18 @@ export const materials = [
         icon: (
             <CameraIcon
                 sx={{
-                    width: { desktop: 150, tablet: 120, mobile: 100 },
-                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    width: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
+                    height: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
                     color: 'secondary.main',
                 }}
             />
@@ -45,8 +65,18 @@ export const materials = [
         icon: (
             <GraphicEqIcon
                 sx={{
-                    width: { desktop: 150, tablet: 120, mobile: 100 },
-                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    width: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
+                    height: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
                     color: 'secondary.main',
                 }}
             />
@@ -60,8 +90,18 @@ export const materials = [
         icon: (
             <LibraryBooksIcon
                 sx={{
-                    width: { desktop: 150, tablet: 120, mobile: 100 },
-                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    width: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
+                    height: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
                     color: 'secondary.main',
                 }}
             />
@@ -75,8 +115,18 @@ export const materials = [
         icon: (
             <CastForEducationIcon
                 sx={{
-                    width: { desktop: 150, tablet: 120, mobile: 100 },
-                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    width: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
+                    height: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
                     color: 'secondary.main',
                 }}
             />
@@ -90,8 +140,18 @@ export const materials = [
         icon: (
             <LockResetIcon
                 sx={{
-                    width: { desktop: 150, tablet: 120, mobile: 100 },
-                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    width: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
+                    height: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
                     color: 'secondary.main',
                 }}
             />
@@ -105,8 +165,18 @@ export const materials = [
         icon: (
             <Diversity3Icon
                 sx={{
-                    width: { desktop: 150, tablet: 120, mobile: 100 },
-                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    width: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
+                    height: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
                     color: 'secondary.main',
                 }}
             />
@@ -120,8 +190,18 @@ export const materials = [
         icon: (
             <CardGiftcardIcon
                 sx={{
-                    width: { desktop: 150, tablet: 120, mobile: 100 },
-                    height: { desktop: 150, tablet: 120, mobile: 100 },
+                    width: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
+                    height: {
+                        desktop: 150,
+                        tablet: 120,
+                        mobile: 100,
+                        mobileSmall: 80,
+                    },
                     color: 'secondary.main',
                 }}
             />

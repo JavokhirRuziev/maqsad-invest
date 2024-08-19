@@ -12,7 +12,7 @@ type CardTypes = {
     isLastChild: boolean;
 };
 
-const CardSecretLessons = ({ el, isLastChild }: CardTypes) => {
+const Card = ({ el, isLastChild }: CardTypes) => {
     return (
         <Box sx={wrapperStyles(isLastChild)}>
             <Box sx={moduleWrapperStyles}>
@@ -34,15 +34,16 @@ const CardSecretLessons = ({ el, isLastChild }: CardTypes) => {
     );
 };
 
-export default CardSecretLessons;
+export default Card;
 
 const wrapperStyles = (isLastChild: boolean) => ({
     bgcolor: isLastChild ? 'secondary.main' : 'common.black',
-    py: { desktop: 5, tablet: 4, mobile: 3.5 },
-    px: 3,
+    py: { desktop: 5, tablet: 4, mobile: 3.5, mobileSmall: 2 },
+    px: { desktop: 3, tablet: 3, mobile: 3, mobileSmall: 2 },
     borderRadius: 2,
     mx: 'auto',
-    width: { desktop: 738, tablet: 638, mobile: 538 },
+    minHeight: { desktop: 410, tablet: 360, mobile: 310, mobileSmall: 'auto' },
+    width: { desktop: 738, tablet: 638, mobile: 538, mobileSmall: 300 },
 });
 
 const moduleWrapperStyles = {
