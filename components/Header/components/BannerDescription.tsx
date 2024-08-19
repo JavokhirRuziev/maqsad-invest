@@ -3,6 +3,13 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import VideocamIcon from '@mui/icons-material/Videocam';
+import {
+    authorStyles2,
+    courseTextStyles,
+    descriptionStyles,
+    iconStyles,
+    wrapperContainerStyles,
+} from './styles';
 
 const BannerDescription = () => {
     return (
@@ -11,7 +18,7 @@ const BannerDescription = () => {
         >
             <Box sx={wrapperContainerStyles}>
                 <Box sx={{ position: 'relative' }}>
-                    <Typography variant='h1' sx={authorStyles}>
+                    <Typography variant='h1' sx={authorStyles2}>
                         Sayyora Abduraxmonovadan
                     </Typography>
                     <Typography
@@ -38,53 +45,3 @@ const BannerDescription = () => {
 };
 
 export default BannerDescription;
-
-const wrapperContainerStyles = {
-    maxWidth: {
-        desktop: 750,
-        tablet: 650,
-        mobile: 550,
-        mobileSmall: 300,
-    },
-};
-
-const courseTextStyles = {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    textTransform: 'uppercase',
-    maxWidth: { desktop: 250, tablet: 250, mobile: 250, mobileSmall: 120 },
-    color: 'common.white',
-    fontSize: {
-        desktop: '12px !important',
-        tablet: '12px !important',
-        mobile: '12px !important',
-        mobileSmall: '8px !important',
-    },
-};
-
-const authorStyles = {
-    color: 'common.white',
-    textTransform: 'uppercase',
-};
-
-const iconStyles = {
-    width: {
-        desktop: 15,
-        tablet: 15,
-        mobile: 15,
-        mobileSmall: 10,
-    },
-    height: {
-        desktop: 15,
-        tablet: 15,
-        mobile: 15,
-        mobileSmall: 10,
-    },
-};
-
-const descriptionStyles = {
-    color: 'common.white',
-    mt: 4,
-    mb: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: 25 },
-};

@@ -1,7 +1,12 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import React, { ReactNode } from 'react';
-import { theme } from '@/theme';
+import {
+    cardLeftBlockWrapperStyles,
+    cardWrapperStyles,
+    iconWrapperStyles,
+    textMarginStyles,
+} from './styles';
 
 type CardTypes = {
     el: {
@@ -18,13 +23,13 @@ const Card = ({ el }: CardTypes) => {
             <Box sx={cardLeftBlockWrapperStyles}>
                 <Typography
                     variant='h1'
-                    sx={{ ...textMarginStylees, color: 'common.black' }}
+                    sx={{ ...textMarginStyles, color: 'common.black' }}
                 >
                     {el?.order}
                 </Typography>
                 <Typography
                     variant='h4'
-                    sx={{ ...textMarginStylees, color: 'common.white' }}
+                    sx={{ ...textMarginStyles, color: 'common.white' }}
                 >
                     {el?.title}
                 </Typography>
@@ -38,54 +43,3 @@ const Card = ({ el }: CardTypes) => {
 };
 
 export default Card;
-
-const cardWrapperStyles = {
-    maxWidth: { desktop: 430, tablet: 390, mobile: 340, mobileSmall: 340 },
-    p: { desktop: 3, tablet: 2.5, mobile: 2, mobileSmall: 1.5 },
-    background: `linear-gradient(to right, ${theme.palette.common.black}, ${theme.palette.primary.main})`,
-    borderRadius: 2,
-    display: 'flex',
-    gap: 3,
-    flexDirection: {
-        desktop: 'unset',
-        tablet: 'unset',
-        mobile: 'unset',
-        mobileSmall: 'column',
-    },
-};
-
-const cardLeftBlockWrapperStyles = {
-    background: `linear-gradient(to right, ${theme.palette.secondary.main}, ${theme.palette.secondary.light})`,
-    borderRadius: 2,
-    width: {
-        desktop: '50%',
-        tablet: '50%',
-        mobile: '50%',
-        mobileSmall: 'auto',
-    },
-    p: 2,
-};
-
-const iconWrapperStyles = {
-    background: `linear-gradient(to right, ${theme.palette.secondary.light}, ${theme.palette.secondary.main})`,
-    width: {
-        desktop: '50%',
-        tablet: '50%',
-        mobile: '50%',
-        mobileSmall: 'auto',
-    },
-    p: 2,
-    borderRadius: 2,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-};
-
-const textMarginStylees = {
-    mb: {
-        desktop: 2,
-        tablet: 2,
-        mobile: 2,
-        mobileSmall: 1,
-    },
-};

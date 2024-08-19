@@ -9,6 +9,11 @@ import { secretLessons } from '@/public/data/lessons';
 import Button from '@mui/material/Button';
 import RaceDecoration from './components/RaceDecoration';
 import CardSecretLessons from './components/CardSecretLessons';
+import {
+    cardWrapperStyles,
+    textH1Styles,
+    textH2Styles,
+} from './components/styles';
 
 const index = () => {
     return (
@@ -46,20 +51,3 @@ const index = () => {
 };
 
 export default index;
-
-const textH2Styles = { color: 'common.white', textAlign: 'center', mb: 2 };
-
-const textH1Styles = {
-    color: 'common.white',
-    textTransform: 'uppercase',
-    maxWidth: 800,
-    mx: 'auto',
-    textAlign: 'center',
-};
-
-const cardWrapperStyles = {
-    mt: 7,
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 5,
-};

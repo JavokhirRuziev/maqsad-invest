@@ -19,14 +19,15 @@ import {
 const index = () => {
     return (
         <Box sx={backgroundWrapperStyles}>
-            <Image
-                src={'/images/main-bg.webp'}
-                objectFit='cover'
-                layout='fill'
-                alt='main-background'
-                className='main-bg'
-                priority
-            />
+            <Box sx={{ img: { objectFit: 'cover' } }}>
+                <Image
+                    src={'/images/main-bg.webp'}
+                    layout='fill'
+                    alt='main-background'
+                    className='main-bg'
+                    priority
+                />
+            </Box>
             <Container sx={containerStyles}>
                 <Box py='15px'>
                     <TopBar />

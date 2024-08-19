@@ -1,11 +1,15 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { theme } from '@/theme';
 import SecondaryBg from '../Containers/SecondaryBg';
 import Container from '@mui/material/Container';
 import Content from './components/Content';
 import Bottom from './components/Bottom';
+import {
+    textH4Styles,
+    titleMainStyles,
+    titleMainWrapperStyles,
+} from './components/styles';
 
 const index = () => {
     return (
@@ -39,21 +43,3 @@ const index = () => {
 };
 
 export default index;
-
-const textH4Styles = {
-    px: 2,
-    py: 0.5,
-    border: `1px solid ${theme.palette.secondary.main}`,
-    borderRadius: 1,
-    width: 'fit-content',
-    color: 'info.main',
-    mb: 0.5,
-};
-
-const titleMainStyles = { color: 'common.white', textTransform: 'uppercase' };
-
-const titleMainWrapperStyles = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    mb: 3,
-};

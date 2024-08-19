@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Card from './Card';
 import Container from '@mui/material/Container';
 import { achievements } from '@/public/data/achievements';
+import { cardWrapperStyles, titleH1Style2 } from './components/styles';
 
 const index = () => {
     return (
@@ -13,7 +14,7 @@ const index = () => {
         >
             <Container>
                 <Box>
-                    <Typography variant='h1' sx={titleH1Styles}>
+                    <Typography variant='h1' sx={titleH1Style2}>
                         20 yoshimgacha erishgan yutuqlarimga qarang:
                     </Typography>
                     <Box sx={cardWrapperStyles}>
@@ -28,19 +29,3 @@ const index = () => {
 };
 
 export default index;
-
-const titleH1Styles = {
-    textAlign: 'center',
-    color: 'common.white',
-    maxWidth: 960,
-    mx: 'auto',
-    textTransform: 'uppercase',
-};
-
-const cardWrapperStyles = {
-    mt: 7,
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: { desktop: 4, tablet: 3.5, mobile: 2.5, mobileSmall: 2 },
-    justifyContent: 'center',
-};

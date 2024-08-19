@@ -2,6 +2,11 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import {
+    contactsTextStyles,
+    textH4Styles,
+    titleStyles,
+} from './components/styles';
 
 const index = () => {
     return (
@@ -45,31 +50,3 @@ const contactsArr = [
     { title: 'Telefon:', description: '95 555 00 05' },
     { title: 'Telegram', description: '@instamediauz' },
 ];
-
-const titleStyles = {
-    fontSize: {
-        desktop: '40px !important',
-        tablet: '35px !important',
-        mobile: '30px !important',
-    },
-    color: 'common.white',
-    mb: 3,
-};
-
-const textH4Styles = {
-    fontSize: {
-        desktop: '18px !important',
-        tablet: '16px !important',
-        mobile: '14px !important',
-    },
-    color: 'common.white',
-    mb: 5,
-};
-const contactsTextStyles = {
-    fontSize: {
-        desktop: '18px !important',
-        tablet: '16px !important',
-        mobile: '14px !important',
-    },
-    color: 'common.white',
-};
