@@ -25,7 +25,7 @@ const Content = () => {
                     ))}
                 </Box>
                 <Box sx={imageWrapperStyles}>
-                    <img src={'/images/humasn.webp'} alt='human' />
+                    <img src={'/images/human.webp'} alt='human' />
                 </Box>
                 <Box sx={rightBlockWrapperStyles}>
                     <Box sx={text100Styles}>
