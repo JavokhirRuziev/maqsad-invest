@@ -36,9 +36,7 @@ const index = () => {
                             <Typography
                                 variant='h4'
                                 sx={contactsTextStyles}
-                                onClick={() =>
-                                    (window.location.href = el?.link)
-                                }
+                                onClick={() => window.open(el.link)}
                             >
                                 {el?.description}
                             </Typography>
@@ -53,10 +51,14 @@ const index = () => {
 export default index;
 
 const contactsArr = [
-    { title: 'Telefon:', description: '33 130 95 90', link: '+998331309590' },
+    {
+        title: 'Telefon:',
+        description: '33 130 95 90',
+        link: 'tel:+998331309590',
+    },
     {
         title: 'Telegram',
         description: '@MAQSAD_aloqa_uchun',
-        link: 't.me/MAQSAD_aloqa_uchun',
+        link: 'https://t.me/MAQSAD_aloqa_uchun',
     },
 ];
