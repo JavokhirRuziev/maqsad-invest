@@ -38,16 +38,6 @@ const index = () => {
                         <Card {...{ el }} />
                     ))}
                 </Box>
-                <Typography variant='h1' sx={textH1Styles} mt={5} mb={3}>
-                    bu hali hammasi emas!
-                </Typography>
-                <RaceDecoration />
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-                    {secretLessons?.map((el, ind, arr) => {
-                        const isLastChild = arr?.length === ind + 1;
-                        return <CardSecretLessons {...{ el, isLastChild }} />;
-                    })}
-                </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
                     <Button onClick={scrollToTarifs}>ro'yxatdan o'tish</Button>
                 </Box>
@@ -57,3 +47,16 @@ const index = () => {
 };
 
 export default index;
+
+{
+    /* <Typography variant='h1' sx={textH1Styles} mt={5} mb={3}>
+                    bu hali hammasi emas!
+                </Typography>
+                <RaceDecoration />
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+                    {secretLessons?.map((el, ind, arr) => {
+                        const isLastChild = arr?.length === ind + 1;
+                        return <CardSecretLessons {...{ el, isLastChild }} />;
+                    })}
+                </Box> */
+}

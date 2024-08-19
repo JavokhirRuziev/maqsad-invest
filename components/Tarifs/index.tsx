@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import VipCard from './components/VipCard';
-import StudentCard from './components/StudentCard';
+// import StudentCard from './components/StudentCard';
 
 const index = () => {
     return (
@@ -29,7 +29,7 @@ const index = () => {
             </Typography>
             <Box sx={cardWrapperStyles}>
                 <VipCard />
-                <StudentCard />
+                {/* <StudentCard /> */}
             </Box>
         </Container>
     );

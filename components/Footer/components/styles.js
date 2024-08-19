@@ -24,4 +24,5 @@ export const contactsTextStyles = {
         mobile: '14px !important',
     },
     color: 'common.white',
+    cursor: 'pointer',
 };

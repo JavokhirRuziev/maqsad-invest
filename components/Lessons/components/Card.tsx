@@ -17,18 +17,6 @@ type CardTypes = {
 const Card = ({ el }: CardTypes) => {
     return (
         <Box sx={wrapperStyles}>
-            <Box sx={moduleWrapperStyles}>
-                <Box sx={iconWrapperStyles}>
-                    <InstagramIcon sx={iconStyles} />
-                </Box>
-                <Typography
-                    variant='h3'
-                    color='common.white'
-                    textTransform={'uppercase'}
-                >
-                    MODUL {el?.module}
-                </Typography>
-            </Box>
             <Typography variant='h1' sx={titleMainStyles}>
                 {el?.title}
             </Typography>
@@ -156,3 +144,18 @@ const rightBlockWrapperStyles = {
     height: { desktop: 250, tablet: 220, mobile: 190, mobileSmall: 130 },
     mr: 3,
 };
+
+{
+    /* <Box sx={moduleWrapperStyles}>
+                <Box sx={iconWrapperStyles}>
+                    <InstagramIcon sx={iconStyles} />
+                </Box>
+                <Typography
+                    variant='h3'
+                    color='common.white'
+                    textTransform={'uppercase'}
+                >
+                    MODUL {el?.module}
+                </Typography>
+            </Box> */
+}

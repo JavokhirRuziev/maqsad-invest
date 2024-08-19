@@ -13,7 +13,7 @@ export const cardWrapperStyles = {
     display: 'flex',
     gap: 2,
     alignItems: 'center',
-    width: { desktop: 300, tablet: 270, mobile: 240 },
+    width: { desktop: 400, tablet: 350, mobile: 280, mobileSmall: 250 },
 };
 
 export const iconWrapperStyles = {
@@ -27,7 +27,7 @@ export const wrapperStyles = {
     p: { desktop: 6, tablet: 6, mobile: 6, mobileSmall: 4 },
     border: `1px solid ${theme.palette.primary.main}`,
     mx: 'auto',
-    maxWidth: { desktop: 1200, tablet: 1000, mobile: 800 },
+    maxWidth: { desktop: 900, tablet: 800, mobile: 700, mobileSmall: 600 },
 };
 
 export const resultsCardWrapperStyles = {

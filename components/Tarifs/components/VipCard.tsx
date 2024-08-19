@@ -26,10 +26,10 @@ const VipCard = () => {
                 </Typography>
             ))}
             <Typography variant='h1' sx={discountPriceStyles}>
-                2500$
+                2000$
             </Typography>
             <Typography variant='h1' sx={priceStyles}>
-                $1500
+                $1000
             </Typography>
             <BasicModal {...{ open, handleClose }}>
                 <Button sx={buttonStyles} onClick={handleOpen}>
@@ -50,15 +50,14 @@ const VipCard = () => {
 export default VipCard;
 
 const vipTarifArr = [
-    '0-15 modul',
-    'Treker nazorati',
-    'SAYYORA ABDURAXMONOVADAN bilan savol va javob chati',
-    'Bonus modul (Klientga xat)',
-    'Kurs so’ngida sertifikat',
-    '5 ta jonli kouch sessiya SAYYORA ABDURAXMONOVADAN bilan',
-    'Maxsus bloknot va ruchka',
-    'Bitta ekspertning tahlili',
-    'InstaMedia jamoasiga qo’shilish imkoniyati',
+    'Mentor nazorati ',
+    'Sayyora Abduraxmonova bilan savol javob hatolar ustida ishlash ',
+    'Bonus modeli ( sovğa strategiyalar) ',
+    'Kurs sóñgida sertifikat ',
+    '40 jonli kouch Sayyora Abduraxmonova bilan ',
+    'Bitta ekspertning taxlili ',
+    'Maqsad capital jamoasiga qóshilish imkoniyati ',
+    'Maqsad capitaldan investitsa olib birgalikda ishlash imkoniyati',
 ];
 
 const vipTarifWrapperStyles = {

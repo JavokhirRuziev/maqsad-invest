@@ -64,7 +64,7 @@ export const authorStyles = {
 
 export const wrapperStyles = {
     display: 'flex',
-    gap: 2,
+    gap: { Desktop: 2, tablet: 2, mobile: 2, mobileSmall: 15 },
     alignItems: 'center',
     mb: { mobileSmall: 3 },
 };
