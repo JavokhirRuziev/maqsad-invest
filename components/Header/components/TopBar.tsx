@@ -20,14 +20,14 @@ const TopBar = () => {
                     }}
                     color={'common.white'}
                 >
-                    Instamedia prodyuserlik markazi
+                    Moliyaviy kompaniya
                 </Typography>
             </Box>
-            <Box>
+            {/* <Box>
                 <Typography variant='h3' sx={startTextStyles}>
                     START: 12 AVGUST
                 </Typography>
-            </Box>
+            </Box> */}
         </Box>
     );
 };

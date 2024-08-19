@@ -66,6 +66,7 @@ export const wrapperStyles = {
     display: 'flex',
     gap: 2,
     alignItems: 'center',
+    mb: { mobileSmall: 3 },
 };
 
 export const startTextStyles = {
