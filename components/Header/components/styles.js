@@ -34,7 +34,7 @@ export const imageContainerStyles = {
         objectFit: 'cover',
     },
     position: 'absolute',
-    bottom: { desktop: -10, tablet: -5, mobile: -50, mobileSmall: -120 },
+    bottom: { desktop: -10, tablet: -5, mobile: -50, mobileSmall: -10 },
     right: 0,
     zIndex: -1,
 };
@@ -43,8 +43,8 @@ export const authorTextStyles = {
     position: 'absolute',
     color: 'common.white',
     maxWidth: 275,
-    bottom: { desktop: 150, tablet: 150, mobile: 150, mobileSmall: 100 },
-    right: { desktop: 100, tablet: 100, mobile: 100, mobileSmall: '50%' },
+    bottom: { desktop: 150, tablet: 150, mobile: 150, mobileSmall: 50 },
+    right: { desktop: 100, tablet: 100, mobile: 100, mobileSmall: '40%' },
     transform: {
         desktop: 'none',
         tablet: 'none',
@@ -100,6 +100,12 @@ export const topbarWrapperStyles = {
         mobileSmall: 'column',
     },
     rowGap: 3,
+    alignItems: {
+        desktop: 'unset',
+        tablet: 'unset',
+        mobile: 'unset',
+        mobileSmall: 'center',
+    },
 };
 
 export const wrapperContainerStyles = {
@@ -149,5 +155,5 @@ export const iconStyles = {
 export const descriptionStyles = {
     color: 'common.white',
     mt: 4,
-    mb: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: 25 },
+    mb: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: 40 },
 };

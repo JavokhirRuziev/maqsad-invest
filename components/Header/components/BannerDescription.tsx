@@ -13,31 +13,24 @@ import {
 
 const BannerDescription = () => {
     return (
-        <Box
-            sx={{ display: 'flex', mt: { desktop: 10, tablet: 6, mobile: 4 } }}
-        >
+        <Box sx={bannerWrapperStyles}>
             <Box sx={wrapperContainerStyles}>
                 <Box sx={{ position: 'relative' }}>
                     <Typography variant='h1' sx={authorStyles2}>
                         Sayyora Abduraxmonovadan
                     </Typography>
-                    <Typography
-                        component={'div'}
-                        variant='body1'
-                        sx={courseTextStyles}
-                    >
-                        <VideocamIcon sx={iconStyles} /> Maxsus offlayn kursYoki
-                        Amaliy kursga taklif
-                    </Typography>
                     <Typography variant='h3' sx={descriptionStyles}>
-                        Shaxsiy strategiya Bozorni 8 hil yunalishda tahlil
-                        qilish 100 dan ortiq oyiga 1000$ dan 5000$ gacha
-                        daromadga chiqan shogirtlar qatoriga qushilish siz ham
-                        oyiga 1000$ dan 5000$ gacha daromadga chiqmoqchimisiz
-                        joylar soni cheklangan. Bunday imkoniyatni quldan boy
-                        bermang
+                        Shaxsiy strategiya <br />
+                        Bozorni SMC ICT SNR yunalishlarida  tahlil qilish <br />
+                        100 dan ortiq natijali shogirtlar jamoasiga qushilish{' '}
+                        <br />
+                        Oyiga 1 000$ dan 5 000$ gacha daromad qilishni
+                        hohlaysizmi ? <br />
+                        Shoshiling! Joylar soni cheklang
                     </Typography>
-                    <Button size='medium'>Joyni band qilish</Button>
+                    <Box sx={buttonWrapperStyles}>
+                        <Button size='medium'>Joyni band qilish</Button>
+                    </Box>
                 </Box>
             </Box>
         </Box>
@@ -45,3 +38,34 @@ const BannerDescription = () => {
 };
 
 export default BannerDescription;
+
+const bannerWrapperStyles = {
+    display: 'flex',
+    mt: { desktop: 10, tablet: 6, mobile: 4 },
+    justifyContent: {
+        desktop: 'unset',
+        tablet: 'unset',
+        mobile: 'unset',
+        mobileSmall: 'center',
+    },
+};
+
+const buttonWrapperStyles = {
+    display: 'flex',
+    justifyContent: {
+        desktop: 'unset',
+        tablet: 'unset',
+        mobile: 'unset',
+        mobileSmall: 'center',
+    },
+};
+
+{
+    /* <Typography
+                        component={'div'}
+                        variant='body1'
+                        sx={courseTextStyles}
+                    >
+                        <VideocamIcon sx={iconStyles} /> Maxsus Amaliy kurs
+                    </Typography> */
+}

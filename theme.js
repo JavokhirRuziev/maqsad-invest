@@ -98,7 +98,7 @@ theme = createTheme(theme, {
                         fontSize: 20,
                         padding: '20px 50px',
                     },
-                    [theme.breakpoints.up('mobileSmall')]: {
+                    [theme.breakpoints.down('mobile')]: {
                         fontSize: 16,
                         padding: '15px 30px',
                     },

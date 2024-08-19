@@ -10,9 +10,8 @@ import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 export const materials = [
     {
         order: '01',
-        title: '100+ darslar',
-        description:
-            "Darslar qulay maxsus platformaga joylangan. O'zingizga qulay vaqtda ko'ra olasiz.",
+        title: '40+ darslar ',
+        description: 'Darslar soat 18:00 - 19:00 vaqtlarda bólib ótadi',
         icon: (
             <PlayLessonIcon
                 sx={{
@@ -36,7 +35,8 @@ export const materials = [
     {
         order: '02',
         title: 'ZOOM sessiyalar:',
-        description: 'Oyiga 2 martadan 8 martaga zoom uchrashuvlar o’tkazamiz',
+        description:
+            'Oyiga 2 martadan 4 martagacha  zoom uchrashuvlar ótkazamiz',
         icon: (
             <CameraIcon
                 sx={{
@@ -61,7 +61,7 @@ export const materials = [
         order: '03',
         title: 'Ovozli chatlar',
         description:
-            'Dastur davomida savollaringizga javob berish uchun ovozli chatlar uyishtiramiz',
+            'Dars vaqtida savol javoblar darsni takror utib berishlar uyishtiramiz',
         icon: (
             <GraphicEqIcon
                 sx={{
@@ -85,8 +85,7 @@ export const materials = [
     {
         order: '04',
         title: 'Gaydlar',
-        description:
-            "Dasturga qo'shimcha sifatida gaydlar va cheklistlar beriladi.",
+        description: 'Dars jarayonida óquv qullanmalar slaydlar beriladi',
         icon: (
             <LibraryBooksIcon
                 sx={{
@@ -109,9 +108,9 @@ export const materials = [
     },
     {
         order: '05',
-        title: 'Kuratorlar',
+        title: 'MENTORLAR',
         description:
-            "Kuchli kuratorlar sizga natijaga erishishingizga yordam berishadi va qo'llab-quvvatlashadi.",
+            'Kuchli mentorlar Sizga natijaga erishishingizga yordam berishadi va qóllab - quvvatlashadi',
         icon: (
             <CastForEducationIcon
                 sx={{
@@ -136,7 +135,7 @@ export const materials = [
         order: '06',
         title: 'Yopiq chat',
         description:
-            "Telegramda siz bilan hamfikr insonlar bilan birga yopiq guruhda bo'lasiz.",
+            'Telegramda siz bilan hamfikr insonlar bilan birga yopiq guruhda bólasiz.',
         icon: (
             <LockResetIcon
                 sx={{
@@ -161,7 +160,7 @@ export const materials = [
         order: '07',
         title: 'Mexmonlar',
         description:
-            "Dasturga 10 ta sirli mexmon spikerlar chaqirilgan. O'qish davomida ular bilan tanishasiz",
+            'Dars jarayonida 3 ta sirli mexmon trederlar chaqirilgan Óqish davomida masterclass ótkazib berishadi ',
         icon: (
             <Diversity3Icon
                 sx={{
@@ -183,10 +182,10 @@ export const materials = [
         ),
     },
     {
-        order: '07',
+        order: '08',
         title: 'Bonuslar',
         description:
-            "Dastur davomida sizga kutilmagan ko'plab bonuslar tayyorlab qo'yganmiz.",
+            'Dars davomida sizga kutilmagan kóplab bonuslar tayyorlab quyganmiz.',
         icon: (
             <CardGiftcardIcon
                 sx={{

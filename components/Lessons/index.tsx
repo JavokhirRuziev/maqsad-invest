@@ -25,7 +25,7 @@ const index = () => {
                     Kursimning ichida siz
                 </Typography>
                 <Typography variant='h1' sx={textH1Styles}>
-                    100 dan ortiq darslarga ega bo’lasiz
+                    40 dan ortiq darslarga ega bólasiz
                 </Typography>
                 <Box sx={cardWrapperStyles}>
                     {lessons?.map((el) => (

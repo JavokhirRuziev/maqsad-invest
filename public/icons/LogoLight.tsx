@@ -19,8 +19,8 @@ const LogoLight = () => {
 export default LogoLight;
 
 const logoWrapperStyles = {
-    width: 74,
-    height: 74,
+    width: { desktop: 85, tablet: 85, mobile: 85, mobileSmall: 60 },
+    height: { desktop: 85, tablet: 85, mobile: 85, mobileSmall: 60 },
     position: 'relative',
     borderRadius: '100px',
     '.logo-light': {
