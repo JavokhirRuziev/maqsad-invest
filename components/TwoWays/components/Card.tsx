@@ -15,14 +15,7 @@ type CardTypes = {
 const Card = ({ el }: CardTypes) => {
     return (
         <Box sx={cardWrpaperStyles}>
-            <Box
-                sx={{
-                    img: {
-                        width: { desktop: 315, tablet: 280, mobile: 260 },
-                        height: { desktop: 410, tablet: 380, mobile: 350 },
-                    },
-                }}
-            >
+            <Box sx={imgStyles}>
                 <img src={el?.img} alt='old' />
             </Box>
             <Typography variant='h1' sx={titleH1Styles}>
@@ -41,12 +34,12 @@ const Card = ({ el }: CardTypes) => {
 export default Card;
 
 const cardWrpaperStyles = {
-    width: { desktop: 350, tablet: 320, mobile: 290 },
+    width: { desktop: 350, tablet: 320, mobile: 290, mobileSmall: 160 },
     bgcolor: 'black',
     border: `1px solid ${theme.palette.primary.main}`,
     overflow: 'hidden',
     borderRadius: 4,
-    p: { desktop: 4, tablet: 3, mobile: 2.5 },
+    p: { desktop: 4, tablet: 3, mobile: 2.5, mobileSmall: 1 },
 };
 
 const titleH1Styles = {
@@ -59,4 +52,22 @@ const titleH1Styles = {
         mobile: '25px !important',
     },
     mb: 2,
+    whiteSpace: 'nowrap',
+};
+
+const imgStyles = {
+    img: {
+        width: {
+            desktop: 315,
+            tablet: 280,
+            mobile: 260,
+            mobileSmall: 140,
+        },
+        height: {
+            desktop: 410,
+            tablet: 380,
+            mobile: 350,
+            mobileSmall: 140,
+        },
+    },
 };

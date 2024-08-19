@@ -7,7 +7,9 @@ import StudentCard from './components/StudentCard';
 
 const index = () => {
     return (
-        <Container sx={{ my: 10 }}>
+        <Container
+            sx={{ my: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 } }}
+        >
             <Typography variant='h1' sx={textH1Styles}>
                 HAR QANDAY SHAROITDAGI INSON BU DASTURDA O’QIY OLISHI{' '}
                 <Typography
@@ -18,7 +20,11 @@ const index = () => {
                     UCHUN 2 TA TARIF QILDIM
                 </Typography>
             </Typography>
-            <Typography variant='h3' mb={10} textAlign={'center'}>
+            <Typography
+                variant='h3'
+                mb={{ desktop: 10, tablet: 10, mobile: 10, mobileSmall: 7 }}
+                textAlign={'center'}
+            >
                 Natijaga chiqish faqat sizning xoxishingizga bog’liq!
             </Typography>
             <Box sx={cardWrapperStyles}>
@@ -42,7 +48,18 @@ const textH1Styles = {
 
 const cardWrapperStyles = {
     display: 'flex',
-    alignItems: 'flex-start',
-    gap: { desktop: 8, tablet: 6, mobile: 4 },
+    alignItems: {
+        desktop: 'flex-start',
+        tablet: 'flex-start',
+        mobile: 'flex-start',
+        mobileSmall: 'center',
+    },
+    gap: { desktop: 8, tablet: 6, mobile: 4, mobileSmall: 10 },
     justifyContent: 'center',
+    flexDirection: {
+        desktop: 'unset',
+        tablet: 'unset',
+        mobile: 'unset',
+        mobileSmall: 'column',
+    },
 };

@@ -1,13 +1,17 @@
 import Box from '@mui/material/Box';
 import React from 'react';
 import SecondaryBg from '../Containers/SecondaryBg';
-import { Button, Container, Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import Button from '@mui/material/Button';
 import Card from './components/Card';
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 
 const index = () => {
     return (
-        <SecondaryBg sx={{ py: 10 }}>
+        <SecondaryBg
+            sx={{ py: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 } }}
+        >
             <Container>
                 <Box>
                     <Typography variant='h1' sx={titleH1Styles}>
@@ -23,15 +27,7 @@ const index = () => {
                     </Box>
                     <Box sx={buttonStyles}>
                         <Button
-                            endIcon={
-                                <ConfirmationNumberIcon
-                                    sx={{
-                                        color: 'warning.main',
-                                        width: 50,
-                                        height: 50,
-                                    }}
-                                />
-                            }
+                            endIcon={<ConfirmationNumberIcon sx={iconStyles} />}
                         >
                             yangi hayotga chiptani olish
                         </Button>
@@ -78,7 +74,7 @@ const textH3Styles = {
 const cardWrapperStyles = {
     mt: 8,
     display: 'flex',
-    gap: 4,
+    gap: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: 2 },
     justifyContent: 'center',
 };
 
@@ -86,4 +82,10 @@ const buttonStyles = {
     mt: 6,
     display: 'flex',
     justifyContent: 'center',
+};
+
+const iconStyles = {
+    color: 'warning.main',
+    width: 50,
+    height: 50,
 };

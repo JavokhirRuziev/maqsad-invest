@@ -9,7 +9,9 @@ import Bottom from './components/Bottom';
 
 const index = () => {
     return (
-        <SecondaryBg sx={{ py: 10 }}>
+        <SecondaryBg
+            sx={{ py: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 } }}
+        >
             <Container>
                 <Box
                     sx={{

@@ -66,11 +66,18 @@ const contentContainerStyles = {
     bgcolor: 'common.black',
     borderRadius: 4,
     position: 'relative',
+    border: `1px solid ${theme.palette.secondary.main}`,
 };
 
 const overlayStyles = {
-    background:
-        'linear-gradient(180deg, rgba(225,225,225,0) 0%, rgba(225,225,225,0) 25%,rgba(225,225,225,0) 50%,rgba(0,0,0,0.5) 75%,rgba(0,0,0,1) 100%)',
+    background: {
+        desktop:
+            'linear-gradient(180deg, rgba(225,225,225,0) 0%, rgba(225,225,225,0) 25%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 75%,rgba(0,0,0,1) 100%)',
+        tablet: 'linear-gradient(180deg, rgba(225,225,225,0) 0%, rgba(225,225,225,0) 25%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 75%,rgba(0,0,0,1) 100%)',
+        mobile: 'linear-gradient(180deg, rgba(225,225,225,0) 0%, rgba(225,225,225,0) 25%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 75%,rgba(0,0,0,1) 100%)',
+        mobileSmall:
+            'linear-gradient(180deg, rgba(225,225,225,0) 0%, rgba(0,0,0,0.25) 25%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 75%,rgba(0,0,0,1) 100%)',
+    },
     position: 'absolute',
     top: 0,
     bottom: 0,
@@ -80,29 +87,40 @@ const overlayStyles = {
 };
 
 const rightBlockWrapperStyles = {
-    width: '30%',
+    width: {
+        desktop: '30%',
+        tablet: '30%',
+        mobile: '30%',
+        mobileSmall: 'auto',
+    },
     display: 'flex',
     alignItems: 'flex-end',
-    flexDirection: 'column',
-    gap: 3,
+    flexDirection: {
+        desktop: 'column',
+        tablet: 'column',
+        mobile: 'column',
+        mobileSmall: 'unset',
+    },
+    gap: { desktop: 3, tablet: 3, mobile: 3, mobileSmall: 1 },
+    zIndex: 1,
+    mt: { desktop: 0, tablet: 0, mobile: 0, mobileSmall: 10 },
 };
 
 const text100Styles = {
-    maxWidth: 200,
+    maxWidth: { desktop: 200, tablet: 200, mobile: 200, mobileSmall: 200 },
     textAlign: 'center',
-    mr: 15,
+    mr: { desktop: 15, tablet: 15, mobile: 15, mobileSmall: 0 },
 };
 
 const text30Styles = {
-    maxWidth: 200,
+    maxWidth: { desktop: 200, tablet: 200, mobile: 200, mobileSmall: 200 },
     textAlign: 'center',
-    mr: 5,
+    mr: { desktop: 5, tablet: 5, mobile: 5, mobileSmall: 0 },
 };
 
 const contentWrapperStyles = {
     px: { desktop: 6, tablet: 4, mobile: 3, mobileSmall: 2 },
     py: { desktop: 3, tablet: 2.5, mobile: 2, mobileSmall: 2 },
-    border: `1px solid ${theme.palette.secondary.main}`,
     borderRadius: 3,
     display: 'flex',
     justifyContent: 'space-between',
@@ -110,13 +128,19 @@ const contentWrapperStyles = {
         desktop: 'unset',
         tablet: 'unset',
         mobile: 'unset',
-        mobileSmall: 'column',
+        mobileSmall: 'column-reverse',
     },
+    gap: 3,
 };
 
 const titleWrapperStyles = {
     textTransform: 'uppercase',
-    fontSize: '30px !important',
+    fontSize: {
+        desktop: '30px !important',
+        tablet: '28px !important',
+        mobile: '22px !important',
+        mobileSmall: '20px !important',
+    },
     color: 'common.white',
     mb: 2,
     maxWidth: { desktop: 500, tablet: 300, mobile: 300 },
@@ -133,10 +157,15 @@ const listTextStyles = {
 
 const imageWrapperStyles = {
     position: 'absolute',
-    top: { desktop: -200, tablet: -150, mobile: -200 },
-    left: { desktop: '55%', tablet: '55%', mobile: '60%' },
+    top: { desktop: -200, tablet: -150, mobile: -200, mobileSmall: -200 },
+    left: { desktop: '55%', tablet: '55%', mobile: '60%', mobileSmall: 0 },
     bottom: 0,
-    transform: 'translateX(-50%)',
+    transform: {
+        desktop: 'translateX(-50%)',
+        tablet: 'translateX(-50%)',
+        mobile: 'translateX(-50%)',
+        mobileSmall: 'none',
+    },
     img: {
         width: 350,
         height: 600,

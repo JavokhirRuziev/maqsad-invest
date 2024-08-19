@@ -16,12 +16,7 @@ type CardTypes = {
 const StudentsCard = ({ el }: CardTypes) => {
     return (
         <Box sx={wrapperStyles}>
-            <Box
-                sx={{
-                    display: 'flex',
-                    gap: { desktop: 3, tablet: 2.5, mobile: 2 },
-                }}
-            >
+            <Box sx={wrapperContainerStyles}>
                 <Box sx={imageWrapperStyles}>
                     <img src={el?.img} alt='fake' />
                 </Box>
@@ -47,17 +42,17 @@ const StudentsCard = ({ el }: CardTypes) => {
 export default StudentsCard;
 
 const wrapperStyles = {
-    p: { desktop: 2, tablet: 1.7, mobile: 1.5 },
+    p: { desktop: 2, tablet: 1.7, mobile: 1.5, mobileSmall: 1.5 },
     background: `linear-gradient(to right, ${theme.palette.secondary.light}, ${theme.palette.common.black})`,
     borderRadius: 3,
-    width: { desktop: 400, tablet: 370, mobile: 340 },
-    height: { desktop: 'auto', tablet: 'auto', mobile: 180 },
+    width: { desktop: 400, tablet: 370, mobile: 340, mobileSmall: 300 },
+    height: { desktop: 'auto', tablet: 'auto', mobile: 180, mobileSmall: 150 },
 };
 
 const imageWrapperStyles = {
     img: {
-        width: { desktop: 150, tablet: 140, mobile: 120 },
-        height: { desktop: 230, tablet: 200, mobile: 180 },
+        width: { desktop: 150, tablet: 140, mobile: 120, mobileSmall: 120 },
+        height: { desktop: 230, tablet: 200, mobile: 180, mobileSmall: 150 },
         objectFit: 'cover',
         borderRadius: 2,
     },
@@ -73,7 +68,18 @@ const textH1Styles = {
         desktop: '28px !important',
         tablet: '24px !important',
         mobile: '20px !important',
+        mobileSmall: '18px !important',
     },
     color: 'common.white',
     textTransform: 'uppercase',
+};
+
+const wrapperContainerStyles = {
+    display: 'flex',
+    gap: {
+        desktop: 3,
+        tablet: 2.5,
+        mobile: 2,
+        mobileSmall: 1.5,
+    },
 };

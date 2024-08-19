@@ -3,19 +3,13 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import { theme } from '@/theme';
-import { Button } from '@mui/material';
+import Button from '@mui/material/Button';
 
 const StudentCard = () => {
     return (
         <Box sx={cardWrapperStyles}>
             <Box sx={iconWrapperStyles}>
-                <LockOpenIcon
-                    sx={{
-                        width: { desktop: 60, tablet: 50, mobile: 40 },
-                        height: { desktop: 60, tablet: 50, mobile: 40 },
-                        color: 'warning.main',
-                    }}
-                />
+                <LockOpenIcon sx={iconStyles} />
             </Box>
             <Typography variant='h3' sx={titleH3Styles}>
                 shaxsan men bilan birga ishlamoqchi bo’lganlar uchun maxsus
@@ -50,8 +44,8 @@ export default StudentCard;
 const cardWrapperStyles = {
     position: 'relative',
     bgcolor: 'primary.main',
-    py: { desktop: 10, tablet: 8, mobile: 6 },
-    px: { desktop: 3.5, tablet: 2.75, mobile: 2 },
+    py: { desktop: 10, tablet: 8, mobile: 6, mobileSmall: 4 },
+    px: { desktop: 3.5, tablet: 2.75, mobile: 2, mobileSmall: 2 },
     borderRadius: 4,
     maxWidth: 500,
 };
@@ -63,7 +57,7 @@ const iconWrapperStyles = {
     bgcolor: 'common.black',
     p: 1.5,
     borderRadius: 100,
-    top: -60,
+    top: { desktop: -60, tablet: -60, mobile: -60, mobileSmall: -40 },
     border: `10px solid ${theme.palette.common.white}`,
 };
 
@@ -94,6 +88,7 @@ const discountPriceStyles = {
         desktop: '40px !important',
         tablet: '35px !important',
         mobile: '30px !important',
+        mobileSmall: '25px !important',
     },
     mt: 3,
 };
@@ -102,4 +97,20 @@ const priceStyles = {
     color: 'common.black',
     textAlign: 'center',
     mt: 3,
+};
+
+const iconStyles = {
+    width: {
+        desktop: 60,
+        tablet: 50,
+        mobile: 40,
+        mobileSmall: 30,
+    },
+    height: {
+        desktop: 60,
+        tablet: 50,
+        mobile: 40,
+        mobileSmall: 30,
+    },
+    color: 'warning.main',
 };

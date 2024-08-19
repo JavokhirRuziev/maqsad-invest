@@ -1,20 +1,14 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { Box } from '@mui/material';
+import Box from '@mui/material/Box';
 import RestoreIcon from '@mui/icons-material/Restore';
 import { theme } from '@/theme';
 
 const Bottom = () => {
     return (
-        <Box sx={{ maxWidth: 800, mx: 'auto', mt: 10 }}>
+        <Box sx={wrapperStyles}>
             <Box sx={iconWrapperStyles}>
-                <RestoreIcon
-                    sx={{
-                        width: { desktop: 130, tablet: 110, mobile: 90 },
-                        height: { desktop: 130, tablet: 110, mobile: 90 },
-                        color: 'info.light',
-                    }}
-                />
+                <RestoreIcon sx={iconStyles} />
             </Box>
             <Typography variant='h1' sx={textH1Styles}>
                 zapusk <br />
@@ -68,6 +62,28 @@ const iconWrapperStyles = {
     width: 'fit-content',
     mx: 'auto',
     borderRadius: 100,
-    p: 3,
+    p: { desktop: 3, tablet: 3, mobile: 3, mobileSmall: 2 },
     mb: 3,
+};
+
+const iconStyles = {
+    width: {
+        desktop: 130,
+        tablet: 110,
+        mobile: 90,
+        mobileSmall: 70,
+    },
+    height: {
+        desktop: 130,
+        tablet: 110,
+        mobile: 90,
+        mobileSmall: 70,
+    },
+    color: 'info.light',
+};
+
+const wrapperStyles = {
+    maxWidth: 800,
+    mx: 'auto',
+    mt: { desktop: 10, tablet: 10, mobile1: 10, mobileSmall: 10 },
 };

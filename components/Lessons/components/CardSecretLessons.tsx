@@ -42,7 +42,6 @@ const wrapperStyles = (isLastChild: boolean) => ({
     px: { desktop: 3, tablet: 3, mobile: 3, mobileSmall: 2 },
     borderRadius: 2,
     mx: 'auto',
-    minHeight: { desktop: 410, tablet: 360, mobile: 310, mobileSmall: 'auto' },
     width: { desktop: 738, tablet: 638, mobile: 538, mobileSmall: 300 },
 });
 

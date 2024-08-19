@@ -54,8 +54,8 @@ const vipTarifArr = [
 ];
 
 const vipTarifWrapperStyles = {
-    py: { desktop: 5, tablet: 4, mobile: 3 },
-    px: { deskot: 7, tablet: 5.5, mobile: 4 },
+    py: { desktop: 5, tablet: 4, mobile: 3, mobileSmall: 2 },
+    px: { deskot: 7, tablet: 5.5, mobile: 4, mobileSmall: 3 },
     bgcolor: 'common.black',
     borderRadius: 3,
     width: 'fit-content',
@@ -75,11 +75,12 @@ const titleStyles = {
 
 const listTextStyles = {
     maxWidth: 230,
-    mb: { desktop: 2.5, tablet: 2, mobile: 1.5 },
+    mb: { desktop: 2.5, tablet: 2, mobile: 1.5, mobileSmall: 1.5 },
     fontSize: {
         desktop: '16px !important',
         tablet: '14px !important',
         mobile: '12px !important',
+        mobileSmall: '11px !important',
     },
     color: 'common.white',
 };
@@ -100,6 +101,11 @@ const priceStyles = {
 const buttonStyles = {
     borderRadius: 100,
     mb: 3,
-    p: '20px 30px !important',
+    p: {
+        desktop: '20px 30px !important',
+        tablet: '20px 30px !important',
+        mobile: '20px 30px !important',
+        mobileSmall: '15px 20px !important',
+    },
     fontSize: '20px !important',
 };

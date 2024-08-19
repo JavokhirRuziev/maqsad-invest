@@ -8,7 +8,9 @@ import { achievements } from '@/public/data/achievements';
 
 const index = () => {
     return (
-        <SecondaryBg sx={{ py: 10 }}>
+        <SecondaryBg
+            sx={{ py: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 } }}
+        >
             <Container>
                 <Box>
                     <Typography variant='h1' sx={titleH1Styles}>
@@ -39,6 +41,6 @@ const cardWrapperStyles = {
     mt: 7,
     display: 'flex',
     flexWrap: 'wrap',
-    gap: { desktop: 4, tablet: 3.5, mobile: 2.5 },
+    gap: { desktop: 4, tablet: 3.5, mobile: 2.5, mobileSmall: 2 },
     justifyContent: 'center',
 };

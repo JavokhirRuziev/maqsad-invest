@@ -5,7 +5,12 @@ import Typography from '@mui/material/Typography';
 
 const index = () => {
     return (
-        <Box sx={{ bgcolor: 'common.black', py: 10 }}>
+        <Box
+            sx={{
+                bgcolor: 'common.black',
+                py: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 },
+            }}
+        >
             <Container>
                 <Typography variant='h1' sx={titleStyles}>
                     SAVOLLARINGIZ QOLDIMI?

@@ -12,7 +12,9 @@ import CardSecretLessons from './components/CardSecretLessons';
 
 const index = () => {
     return (
-        <SecondaryBg sx={{ py: 10 }}>
+        <SecondaryBg
+            sx={{ py: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 } }}
+        >
             <Container>
                 <Typography variant='h2' sx={textH2Styles}>
                     Kursimning ichida siz

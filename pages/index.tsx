@@ -5,12 +5,12 @@ const Professions = dynamic(() => import('../components/Professions'));
 const Materials = dynamic(() => import('../components/Materials'));
 const Lessons = dynamic(() => import('../components/Lessons'));
 const Introduce = dynamic(() => import('../components/Introduce'));
-const Footer = dynamic(() => import('../components/Footer'));
-const Results = dynamic(() => import('../components/Results'));
-const Tarifs = dynamic(() => import('../components/Tarifs'));
 const Achievements = dynamic(() => import('../components/Achievements'));
 const TwoWays = dynamic(() => import('../components/TwoWays'));
 const Students = dynamic(() => import('../components/Students'));
+const Tarifs = dynamic(() => import('../components/Tarifs'));
+const Results = dynamic(() => import('../components/Results'));
+const Footer = dynamic(() => import('../components/Footer'));
 
 export default function Home() {
     return (

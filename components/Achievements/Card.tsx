@@ -36,11 +36,11 @@ const Card = ({ el }: CardTypes) => {
 export default Card;
 
 const wrapperStyles = {
-    p: { desktop: 3, tablet: 2.5, mobile: 2 },
+    p: { desktop: 3, tablet: 2.5, mobile: 2, mobileSmall: 2 },
     position: 'relative',
     overflow: 'hidden',
-    width: { desktop: 540, tablet: 500, mobile: 440 },
-    height: { desktop: 260, tablet: 230, mobile: 200 },
+    width: { desktop: 540, tablet: 500, mobile: 440, mobileSmall: 400 },
+    height: { desktop: 260, tablet: 230, mobile: 200, mobileSmall: 150 },
     borderRadius: 3,
     display: 'flex',
     alignItems: 'center',
@@ -62,8 +62,8 @@ const imageWrapperStyles = {
     right: 0,
     top: 0,
     img: {
-        width: { desktop: 300, tablet: 270, mobile: 230 },
-        height: { desktop: 310, tablet: 280, mobile: 250 },
+        width: { desktop: 300, tablet: 270, mobile: 230, mobileSmall: 200 },
+        height: { desktop: 310, tablet: 280, mobile: 250, mobileSmall: 230 },
         objectFit: 'cover',
     },
 };
@@ -71,7 +71,7 @@ const imageWrapperStyles = {
 const textOverlayStyles = {
     position: 'absolute',
     zIndex: 4,
-    width: '65%',
+    width: { desktop: '65%', tablet: '65%', mobile: '65%', mobileSmall: '67%' },
     top: 0,
     left: 0,
     bottom: 0,
@@ -86,8 +86,8 @@ const textContainerStyles = {
     left: 0,
     bottom: 0,
     zIndex: 3,
-    m: { desktop: 3, tablet: 2.5, mobile: 2 },
-    p: { desktop: 3, tablet: 2.5, mobile: 2 },
+    m: { desktop: 3, tablet: 2.5, mobile: 2, mobileSmall: 2 },
+    p: { desktop: 3, tablet: 2.5, mobile: 2, mobileSmall: 2 },
     border: `1px solid ${theme.palette.common.white}`,
     width: '40%',
     borderRadius: 2,
@@ -101,6 +101,7 @@ const titleH1Styles = {
         desktop: '35px !important',
         tablet: '30px !important',
         mobile: '25px !important',
+        mobileSmall: '22px !important',
     },
 };
 

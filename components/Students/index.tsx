@@ -23,7 +23,9 @@ const Index = () => {
     }, []);
 
     return (
-        <SecondaryBg sx={{ py: 10 }}>
+        <SecondaryBg
+            sx={{ py: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 } }}
+        >
             <Container>
                 <Box>
                     <Typography variant='h1' sx={titleH1Styles}>
@@ -91,7 +93,7 @@ const iframeWrapperStyles = {
     mt: 4,
     iframe: {
         width: 250,
-        height: 450,
+        height: { desktop: 450, tablet: 450, mobile: 450, mobileSmall: 350 },
         aspectRatio: '16/9',
         borderRadius: 2,
     },
@@ -124,7 +126,7 @@ const titleStudentStyles = {
 };
 const studentCardWrapperStyles = {
     display: 'flex',
-    gap: { desktop: 8, tablet: 6, mobile: 4 },
+    gap: { desktop: 8, tablet: 6, mobile: 4, mobileSmall: 2 },
     flexWrap: 'wrap',
     justifyContent: 'center',
 };
