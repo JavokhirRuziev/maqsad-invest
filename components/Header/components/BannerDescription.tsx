@@ -2,16 +2,19 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import VideocamIcon from '@mui/icons-material/Videocam';
 import {
     authorStyles2,
-    courseTextStyles,
     descriptionStyles,
-    iconStyles,
     wrapperContainerStyles,
 } from './styles';
 
 const BannerDescription = () => {
+    const scrollToTarifs = () => {
+        const tarifsSection = document.getElementById('tarifs');
+        if (tarifsSection) {
+            tarifsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <Box sx={bannerWrapperStyles}>
             <Box sx={wrapperContainerStyles}>
@@ -29,7 +32,9 @@ const BannerDescription = () => {
                         Shoshiling! Joylar soni cheklang
                     </Typography>
                     <Box sx={buttonWrapperStyles}>
-                        <Button size='medium'>Joyni band qilish</Button>
+                        <Button size='medium' onClick={scrollToTarifs}>
+                            Joyni band qilish
+                        </Button>
                     </Box>
                 </Box>
             </Box>

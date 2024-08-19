@@ -16,6 +16,12 @@ import {
 } from './components/styles';
 
 const index = () => {
+    const scrollToTarifs = () => {
+        const tarifsSection = document.getElementById('tarifs');
+        if (tarifsSection) {
+            tarifsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <SecondaryBg
             sx={{ py: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 } }}
@@ -43,7 +49,7 @@ const index = () => {
                     })}
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
-                    <Button>ro'yxatdan o'tish</Button>
+                    <Button onClick={scrollToTarifs}>ro'yxatdan o'tish</Button>
                 </Box>
             </Container>
         </SecondaryBg>

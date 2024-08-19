@@ -19,10 +19,12 @@ export default function Home() {
             <Professions />
             <Materials />
             <Lessons />
+            <div id='me' />
             <Introduce />
             <Achievements />
             <TwoWays />
             <Students />
+            <div id='tarifs' />
             <Tarifs />
             <Results />
             <Footer />

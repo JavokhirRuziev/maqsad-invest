@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import BasicModal from '@/components/Modals/BaseModal';
 
 const VipCard = () => {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     return (
         <Box sx={vipTarifWrapperStyles}>
             <Typography variant='h3' sx={tarifTextStyles}>
@@ -27,7 +31,11 @@ const VipCard = () => {
             <Typography variant='h1' sx={priceStyles}>
                 $1500
             </Typography>
-            <Button sx={buttonStyles}>vip tarifni tanlash</Button>
+            <BasicModal {...{ open, handleClose }}>
+                <Button sx={buttonStyles} onClick={handleOpen}>
+                    vip tarifni tanlash
+                </Button>
+            </BasicModal>
             <Typography
                 variant='body1'
                 textAlign={'center'}

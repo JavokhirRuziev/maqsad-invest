@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import { theme } from '@/theme';
 import Button from '@mui/material/Button';
+import BasicModal from '@/components/Modals/BaseModal';
 
 const StudentCard = () => {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
     return (
         <Box sx={cardWrapperStyles}>
             <Box sx={iconWrapperStyles}>
@@ -33,7 +37,9 @@ const StudentCard = () => {
                 $3800
             </Typography>
             <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
-                <Button>shogird tushish</Button>
+                <BasicModal {...{ open, handleClose }}>
+                    <Button onClick={handleOpen}>shogird tushish</Button>
+                </BasicModal>
             </Box>
         </Box>
     );

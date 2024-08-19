@@ -8,6 +8,12 @@ import Card from './components/Card';
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 
 const index = () => {
+    const scrollToTarifs = () => {
+        const tarifsSection = document.getElementById('tarifs');
+        if (tarifsSection) {
+            tarifsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <SecondaryBg
             sx={{ py: { desktop: 10, tablet: 10, mobile: 10, mobileSmall: 6 } }}
@@ -28,6 +34,7 @@ const index = () => {
                     <Box sx={buttonStyles}>
                         <Button
                             endIcon={<ConfirmationNumberIcon sx={iconStyles} />}
+                            onClick={scrollToTarifs}
                         >
                             yangi hayotga chiptani olish
                         </Button>
