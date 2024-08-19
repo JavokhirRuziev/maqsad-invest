@@ -1,14 +1,16 @@
-import Header from '../components/Header';
-import Professions from '../components/Professions';
-import Materials from '../components/Materials';
-import Lessons from '../components/Lessons';
-import Introduce from '../components/Introduce';
-import Footer from '../components/Footer';
-import Results from '../components/Results';
-import Tarifs from '../components/Tarifs';
-import Achievements from '../components/Achievements';
-import TwoWays from '../components/TwoWays';
-import Students from '../components/Students';
+import dynamic from 'next/dynamic';
+
+const Header = dynamic(() => import('../components/Header'));
+const Professions = dynamic(() => import('../components/Professions'));
+const Materials = dynamic(() => import('../components/Materials'));
+const Lessons = dynamic(() => import('../components/Lessons'));
+const Introduce = dynamic(() => import('../components/Introduce'));
+const Footer = dynamic(() => import('../components/Footer'));
+const Results = dynamic(() => import('../components/Results'));
+const Tarifs = dynamic(() => import('../components/Tarifs'));
+const Achievements = dynamic(() => import('../components/Achievements'));
+const TwoWays = dynamic(() => import('../components/TwoWays'));
+const Students = dynamic(() => import('../components/Students'));
 
 export default function Home() {
     return (

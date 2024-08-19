@@ -6,8 +6,22 @@ import Typography from '@mui/material/Typography';
 import InterviewsCard from './components/Interviews';
 import StudentsCard from './components/StudentsCard';
 import { students } from '@/public/data/students';
+import { useEffect, useRef } from 'react';
 
 const Index = () => {
+    const iframeContainerRef = useRef<null | any>(null);
+
+    useEffect(() => {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/2Fvz9qgmeGA';
+        iframe.frameBorder = '0';
+        iframe.allow =
+            'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.title = 'YouTube video';
+        iframeContainerRef.current.appendChild(iframe);
+    }, []);
+
     return (
         <SecondaryBg sx={{ py: 10 }}>
             <Container>
@@ -15,15 +29,10 @@ const Index = () => {
                     <Typography variant='h1' sx={titleH1Styles}>
                         Bosh shogirtimning natijasi
                     </Typography>
-                    <Box sx={iframeWrapperStyles}>
-                        <iframe
-                            src='https://www.youtube.com/embed/2Fvz9qgmeGA'
-                            frameBorder='0'
-                            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                            allowFullScreen
-                            title='YouTube video'
-                        ></iframe>
-                    </Box>
+                    <Box
+                        sx={iframeWrapperStyles}
+                        ref={iframeContainerRef}
+                    ></Box>
                     <Typography
                         variant='h1'
                         textAlign='center'

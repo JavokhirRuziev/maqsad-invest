@@ -17,6 +17,7 @@ const index = () => {
                 layout='fill'
                 alt='main-background'
                 className='main-bg'
+                priority
             />
 
             <Container sx={containerStyles}>
@@ -28,6 +29,7 @@ const index = () => {
                             src={'/images/human.webp'}
                             className='human-image'
                             alt='human-image'
+                            loading='lazy'
                         />
                     </Box>
                     <Box sx={authorTextStyles}>

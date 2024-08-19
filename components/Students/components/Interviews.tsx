@@ -1,18 +1,23 @@
 import Box from '@mui/material/Box';
 import React from 'react';
+import { useEffect, useRef } from 'react';
 
 const InterviewsCard = ({ el }: { el: string }) => {
+    const iframeContainerRef = useRef<null | any>(null);
+
+    useEffect(() => {
+        const iframe = document.createElement('iframe');
+        iframe.src = el;
+        iframe.frameBorder = '0';
+        iframe.allow =
+            'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.title = 'YouTube video';
+        iframeContainerRef.current.appendChild(iframe);
+    }, []);
     return (
         <Box>
-            <Box sx={iframeWrapperStyles}>
-                <iframe
-                    src={el}
-                    frameBorder='0'
-                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                    allowFullScreen
-                    title='YouTube video'
-                ></iframe>
-            </Box>
+            <Box sx={iframeWrapperStyles} ref={iframeContainerRef}></Box>
         </Box>
     );
 };
