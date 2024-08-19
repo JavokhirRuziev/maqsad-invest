@@ -6,6 +6,12 @@ import Card from './components/Card';
 import { professions } from '../../public/data/professions';
 import Button from '@mui/material/Button';
 import Vawe from './components/Vawe';
+import {
+    cardWrapperContainerStyles,
+    textH1ContainerStyles,
+    textH2Styles,
+    vaweDecorationStyles,
+} from './components/styles';
 
 const index = () => {
     return (
@@ -15,7 +21,7 @@ const index = () => {
                     <Typography variant='h2' sx={textH2Styles}>
                         6 toifa insonlar qatoriga kirsangiz
                     </Typography>
-                    <Typography variant='h1' sx={textH1Styles}>
+                    <Typography variant='h1' sx={textH1ContainerStyles}>
                         mening dasturim aniq{' '}
                         <Typography
                             component={'span'}
@@ -25,7 +31,7 @@ const index = () => {
                             siz uchun to’g’ri keladi
                         </Typography>
                     </Typography>
-                    <Box sx={cardWrapperStyles}>
+                    <Box sx={cardWrapperContainerStyles}>
                         {professions?.map((el) => (
                             <Card {...{ el }} />
                         ))}
@@ -43,27 +49,3 @@ const index = () => {
 };
 
 export default index;
-
-const textH2Styles = { color: 'common.black', textAlign: 'center', mb: 2 };
-
-const textH1Styles = {
-    color: 'common.black',
-    textTransform: 'uppercase',
-    maxWidth: { desktop: 800, tablet: 700, mobile: 550, mobileSmall: 400 },
-    mx: 'auto',
-};
-
-const cardWrapperStyles = {
-    display: 'flex',
-    my: { desktop: 10, tablet: 9, mobile: 8, mobileSmall: 6 },
-    columnGap: { desktop: 8, tablet: 6, mobile: 4, mobileSmall: 3 },
-    rowGap: { desktop: 8, tablet: 8, mobile: 7, mobileSmall: 4 },
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-};
-const vaweDecorationStyles = {
-    position: 'absolute',
-    bottom: -140,
-    left: '50%',
-    transform: 'translateX(-50%)',
-};
