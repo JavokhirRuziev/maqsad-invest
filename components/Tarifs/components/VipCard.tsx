@@ -20,8 +20,8 @@ const VipCard = () => {
             <Divider
                 sx={{ width: 175, mx: 'auto', bgcolor: 'grey.600', mb: 3 }}
             />
-            {vipTarifArr?.map((el) => (
-                <Typography variant='h4' sx={listTextStyles}>
+            {vipTarifArr?.map((el, ind) => (
+                <Typography key={ind} variant='h4' sx={listTextStyles}>
                     &middot; {el}
                 </Typography>
             ))}

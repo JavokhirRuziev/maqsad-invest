@@ -47,16 +47,16 @@ const Index = () => {
                         O'quvchilarim bilan intervyular
                     </Typography>
                     <Box sx={cardWrapperStyles}>
-                        {interviewsArr?.map((el) => (
-                            <InterviewsCard {...{ el }} />
+                        {interviewsArr?.map((el, ind) => (
+                            <InterviewsCard key={ind} {...{ el }} />
                         ))}
                     </Box>
                     <Typography variant='h1' sx={titleStudentStyles}>
                         O'quvchilarimning natijalari
                     </Typography>
                     <Box sx={studentCardWrapperStyles}>
-                        {students?.map((el) => (
-                            <StudentsCard {...{ el }} />
+                        {students?.map((el, ind) => (
+                            <StudentsCard key={ind} {...{ el }} />
                         ))}
                     </Box>
                 </Box>

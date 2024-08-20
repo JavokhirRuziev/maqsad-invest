@@ -13,8 +13,9 @@ const Content = () => {
                     <Typography variant='h1' sx={titleWrapperStyles}>
                         SAYYORA ABDURAXMONOVADAN
                     </Typography>
-                    {introduce?.map((el) => (
+                    {introduce?.map((el, ind) => (
                         <Typography
+                            key={ind}
                             component={'div'}
                             variant='body1'
                             sx={listTextStyles}

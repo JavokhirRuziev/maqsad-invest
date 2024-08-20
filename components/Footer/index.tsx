@@ -24,8 +24,8 @@ const index = () => {
                     Bizga qo’ng’iroq qiling yoki telegram orqali bog’laning
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 10 }}>
-                    {contactsArr?.map((el) => (
-                        <Box>
+                    {contactsArr?.map((el, ind) => (
+                        <Box key={ind}>
                             <Typography
                                 variant='body1'
                                 color={'info.light'}

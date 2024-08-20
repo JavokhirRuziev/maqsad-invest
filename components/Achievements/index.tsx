@@ -18,8 +18,8 @@ const index = () => {
                         20 yoshimgacha erishgan yutuqlarimga qarang:
                     </Typography>
                     <Box sx={cardWrapperStyles}>
-                        {achievements?.map((el) => (
-                            <Card {...{ el }} />
+                        {achievements?.map((el, ind) => (
+                            <Card key={ind} {...{ el }} />
                         ))}
                     </Box>
                 </Box>

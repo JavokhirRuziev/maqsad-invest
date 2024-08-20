@@ -34,8 +34,8 @@ const index = () => {
                     40 dan ortiq darslarga ega bólasiz
                 </Typography>
                 <Box sx={cardWrapperStyles}>
-                    {lessons?.map((el) => (
-                        <Card {...{ el }} />
+                    {lessons?.map((el, ind) => (
+                        <Card key={ind} {...{ el }} />
                     ))}
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>

@@ -60,8 +60,8 @@ const index = () => {
                     </Typography>
                 </Typography>
                 <Box sx={cardWrapperStyles2}>
-                    {materials?.map((el) => (
-                        <Card {...{ el }} />
+                    {materials?.map((el, ind) => (
+                        <Card key={ind} {...{ el }} />
                     ))}
                 </Box>
             </Container>

@@ -18,6 +18,11 @@ const style = {
     boxShadow: 24,
 };
 
+interface UserInfo {
+    name: string;
+    phone_number: string;
+}
+
 export default function BasicModal({
     children,
     open,
@@ -27,6 +32,37 @@ export default function BasicModal({
     open: boolean;
     handleClose: () => void;
 }) {
+    const [userInfo, setUserInfo] = React.useState<UserInfo>({
+        name: '',
+        phone_number: '+998',
+    });
+
+    const onSubmit = (e: { preventDefault: () => void }) => {
+        e.preventDefault();
+        const text = `<b>Yangi lead</b>\n\n<b>Ismi:</b> ${userInfo.name}\n<b>Telefon raqami:</b> ${userInfo.phone_number}`;
+
+        fetch(
+            'https://api.telegram.org/bot7167846823:AAFDRoi3JIg7mqAe6pCD4LRlOgZjnxNQ1lo/sendMessage',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    chat_id: '-4519241525',
+                    text: text,
+                    parse_mode: 'HTML',
+                }),
+            }
+        )
+            .then((res) => res.json())
+            .then((res) => {
+                console.table(res);
+                alert('Successful');
+            })
+            .catch((err) => console.log(err));
+    };
+
     return (
         <>
             {children}
@@ -53,16 +89,43 @@ export default function BasicModal({
                             <Divider sx={dividerStyles} />
                         </Box>
                         <Box sx={bottomWrapperStyles}>
-                            <Typography variant='h3' textAlign={'center'}>
-                                VIP TARIFIGA RO'YXATDAN O'TISH
-                            </Typography>
-                            <Typography variant='body1' textAlign={'center'}>
-                                Ma'lumotlaringizni qoldiring, siz bilan tez
-                                orada bog'lanamiz
-                            </Typography>
-                            <TextField placeholder='Ismingiz' />
-                            <TextField placeholder='+9989' />
-                            <Button sx={buttonStyles}>Ro'yxatdan o'tish</Button>
+                            <form onSubmit={onSubmit}>
+                                <Typography variant='h3' textAlign={'center'}>
+                                    VIP TARIFIGA RO'YXATDAN O'TISH
+                                </Typography>
+                                <Typography
+                                    variant='body1'
+                                    textAlign={'center'}
+                                >
+                                    Ma'lumotlaringizni qoldiring, siz bilan tez
+                                    orada bog'lanamiz
+                                </Typography>
+                                <TextField
+                                    placeholder='Ismingiz'
+                                    name='name'
+                                    value={userInfo.name}
+                                    onChange={(e) =>
+                                        setUserInfo({
+                                            ...userInfo,
+                                            name: e.target.value,
+                                        })
+                                    }
+                                />
+                                <TextField
+                                    placeholder='+998'
+                                    name='phone'
+                                    value={userInfo.phone_number}
+                                    onChange={(e) =>
+                                        setUserInfo({
+                                            ...userInfo,
+                                            phone_number: e.target.value,
+                                        })
+                                    }
+                                />
+                                <Button sx={buttonStyles} type='submit'>
+                                    Ro'yxatdan o'tish
+                                </Button>
+                            </form>
                         </Box>
                     </Box>
                 </Box>
@@ -79,10 +142,12 @@ const iconWrapperStyles = {
 };
 
 const bottomWrapperStyles = {
-    p: '40px 45px',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 3,
+    form: {
+        p: '40px 45px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 3,
+    },
 };
 
 const buttonStyles = {

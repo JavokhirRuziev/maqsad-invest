@@ -25,8 +25,9 @@ const Card = ({ el }: CardTypes) => {
                     <Typography variant='h4' color={'common.white'} mb={3}>
                         Qanday mavzularni o’z ichiga oladi:
                     </Typography>
-                    {el?.subjects?.map((el) => (
+                    {el?.subjects?.map((el, ind) => (
                         <Typography
+                            key={ind}
                             component={'div'}
                             variant='body1'
                             sx={listTextStyles}

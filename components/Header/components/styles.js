@@ -34,7 +34,7 @@ export const imageContainerStyles = {
         objectFit: 'cover',
     },
     position: 'absolute',
-    bottom: { desktop: -10, tablet: -5, mobile: -50, mobileSmall: -10 },
+    bottom: { desktop: -100, tablet: -5, mobile: -50, mobileSmall: -10 },
     right: 0,
     zIndex: -1,
 };

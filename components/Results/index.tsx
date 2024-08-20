@@ -35,8 +35,8 @@ const index = () => {
                     </Typography>
                 </Typography>
                 <Box sx={resultsCardWrapperStyles}>
-                    {results?.map((el) => (
-                        <Box sx={cardWrapperStyles}>
+                    {results?.map((el, ind) => (
+                        <Box sx={cardWrapperStyles} key={ind}>
                             <Box sx={iconWrapperStyles}>{el?.icon}</Box>
                             <Typography
                                 variant='h4'

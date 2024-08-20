@@ -38,8 +38,8 @@ const index = () => {
                         </Typography>
                     </Typography>
                     <Box sx={cardWrapperContainerStyles}>
-                        {professions?.map((el) => (
-                            <Card {...{ el }} />
+                        {professions?.map((el, ind) => (
+                            <Card key={ind} {...{ el }} />
                         ))}
                     </Box>
                     <Box sx={{ display: 'flex', justifyContent: 'center' }}>

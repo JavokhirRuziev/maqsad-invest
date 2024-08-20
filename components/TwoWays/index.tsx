@@ -27,8 +27,8 @@ const index = () => {
                         Bu imkoniyat sizga boshqa berilmasligi mumkin
                     </Typography>
                     <Box sx={cardWrapperStyles}>
-                        {oldNewArr?.map((el) => (
-                            <Card {...{ el }} />
+                        {oldNewArr?.map((el, ind) => (
+                            <Card key={ind} {...{ el }} />
                         ))}
                     </Box>
                     <Box sx={buttonStyles}>

@@ -35,7 +35,7 @@ const RaceDecoration = () => {
                 x2='150'
                 y2='80'
                 stroke='#FFFFFF'
-                stroke-width='2'
+                strokeWidth='2'
             />
             <line
                 x1='250'
@@ -43,7 +43,7 @@ const RaceDecoration = () => {
                 x2='250'
                 y2='80'
                 stroke='#FFFFFF'
-                stroke-width='2'
+                strokeWidth='2'
             />
             <line
                 x1='350'
@@ -51,7 +51,7 @@ const RaceDecoration = () => {
                 x2='350'
                 y2='80'
                 stroke='#FFFFFF'
-                stroke-width='2'
+                strokeWidth='2'
             />
             <line
                 x1='450'
@@ -59,7 +59,7 @@ const RaceDecoration = () => {
                 x2='450'
                 y2='80'
                 stroke='#FFFFFF'
-                stroke-width='2'
+                strokeWidth='2'
             />
             <line
                 x1='550'
@@ -67,7 +67,7 @@ const RaceDecoration = () => {
                 x2='550'
                 y2='80'
                 stroke='#FFFFFF'
-                stroke-width='2'
+                strokeWidth='2'
             />
             <line
                 x1='650'
@@ -75,7 +75,7 @@ const RaceDecoration = () => {
                 x2='650'
                 y2='80'
                 stroke='#FFFFFF'
-                stroke-width='2'
+                strokeWidth='2'
             />
             <line
                 x1='750'
@@ -83,7 +83,7 @@ const RaceDecoration = () => {
                 x2='750'
                 y2='80'
                 stroke='#FFFFFF'
-                stroke-width='2'
+                strokeWidth='2'
             />
             <line
                 x1='850'
@@ -91,7 +91,7 @@ const RaceDecoration = () => {
                 x2='850'
                 y2='80'
                 stroke='#FFFFFF'
-                stroke-width='2'
+                strokeWidth='2'
             />
             <circle cx='50' cy='50' r='25' fill='#000000' />
             <text
