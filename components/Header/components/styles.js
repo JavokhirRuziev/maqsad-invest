@@ -34,7 +34,7 @@ export const imageContainerStyles = {
         objectFit: 'cover',
     },
     position: 'absolute',
-    bottom: { desktop: -100, tablet: -5, mobile: -50, mobileSmall: -10 },
+    bottom: { desktop: -100, tablet: -5, mobile: -50, mobileSmall: -150 },
     right: 0,
     zIndex: -1,
 };
@@ -154,6 +154,6 @@ export const iconStyles = {
 
 export const descriptionStyles = {
     color: 'common.white',
-    mt: 4,
-    mb: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: '295px' },
+    mt: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: 2 },
+    mb: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: '315px' },
 };

@@ -22,6 +22,7 @@ export const contactsTextStyles = {
         desktop: '18px !important',
         tablet: '16px !important',
         mobile: '14px !important',
+        mobileSmall: '12px !important',
     },
     color: 'common.white',
     cursor: 'pointer',

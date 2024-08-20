@@ -53,7 +53,7 @@ export default index;
 const contactsArr = [
     {
         title: 'Telefon:',
-        description: '33 130 95 90',
+        description: '88 130 95 90',
         link: 'tel:+998331309590',
     },
     {
