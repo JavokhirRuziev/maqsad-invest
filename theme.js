@@ -88,19 +88,19 @@ theme = createTheme(theme, {
                     overflow: 'hidden',
                     [theme.breakpoints.up('desktop')]: {
                         fontSize: 30,
-                        padding: '40px 100px',
+                        padding: '30px 80px',
                     },
                     [theme.breakpoints.between('tablet', 'desktop')]: {
                         fontSize: 25,
-                        padding: '30px 70px',
+                        padding: '20px 60px',
                     },
                     [theme.breakpoints.between('mobile', 'tablet')]: {
                         fontSize: 20,
-                        padding: '20px 50px',
+                        padding: '15px 40px',
                     },
                     [theme.breakpoints.down('mobile')]: {
                         fontSize: 16,
-                        padding: '15px 30px',
+                        padding: '10px 30px',
                     },
                 },
             },

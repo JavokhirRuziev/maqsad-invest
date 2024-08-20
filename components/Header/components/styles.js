@@ -155,5 +155,5 @@ export const iconStyles = {
 export const descriptionStyles = {
     color: 'common.white',
     mt: 4,
-    mb: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: 40 },
+    mb: { desktop: 4, tablet: 4, mobile: 4, mobileSmall: '295px' },
 };

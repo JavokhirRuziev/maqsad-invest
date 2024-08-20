@@ -6,24 +6,14 @@ import Divider from '@mui/material/Divider';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Close from '@mui/icons-material/Close';
-
-const style = {
-    position: 'absolute' as 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    maxWidth: 560,
-    width: '100%',
-    bgcolor: 'background.paper',
-    boxShadow: 24,
-};
+import { error, success } from '@/utils/notifications';
 
 interface UserInfo {
     name: string;
     phone_number: string;
 }
 
-export default function BasicModal({
+const BasicModal = ({
     children,
     open,
     handleClose,
@@ -31,16 +21,41 @@ export default function BasicModal({
     children: React.ReactNode;
     open: boolean;
     handleClose: () => void;
-}) {
+}) => {
     const [userInfo, setUserInfo] = React.useState<UserInfo>({
         name: '',
         phone_number: '+998',
     });
 
+    const handleChange = (param: string, e: { target: { value: any } }) => {
+        setUserInfo({
+            ...userInfo,
+            [param]: e.target.value,
+        });
+    };
+
+    const formatPhoneNumber = (input: string) => {
+        const cleanInput = input.replace(/[^\d+]/g, '');
+        if (cleanInput.startsWith('+998')) {
+            let formatted = cleanInput.replace(
+                /(\+998)(\d{2})(\d{3})(\d{2})(\d{2})/,
+                '$1 $2 $3 $4 $5'
+            );
+            return formatted.length > 17 ? formatted.slice(0, 17) : formatted;
+        } else {
+            return '+998';
+        }
+    };
+
+    const handleInputChange = (e: { target: { value: any } }) => {
+        const input = e.target.value;
+        const formattedInput = formatPhoneNumber(input);
+        handleChange('phone_number', { target: { value: formattedInput } });
+    };
+
     const onSubmit = (e: { preventDefault: () => void }) => {
         e.preventDefault();
         const text = `<b>Yangi lead</b>\n\n<b>Ismi:</b> ${userInfo.name}\n<b>Telefon raqami:</b> ${userInfo.phone_number}`;
-
         fetch(
             'https://api.telegram.org/bot7167846823:AAFDRoi3JIg7mqAe6pCD4LRlOgZjnxNQ1lo/sendMessage',
             {
@@ -57,10 +72,14 @@ export default function BasicModal({
         )
             .then((res) => res.json())
             .then((res) => {
-                console.table(res);
-                alert('Successful');
+                success();
+                handleClose();
+                setUserInfo({
+                    name: '',
+                    phone_number: '+998',
+                });
             })
-            .catch((err) => console.log(err));
+            .catch((err) => error());
     };
 
     return (
@@ -104,23 +123,18 @@ export default function BasicModal({
                                     placeholder='Ismingiz'
                                     name='name'
                                     value={userInfo.name}
-                                    onChange={(e) =>
-                                        setUserInfo({
-                                            ...userInfo,
-                                            name: e.target.value,
-                                        })
-                                    }
+                                    onChange={(e) => handleChange('name', e)}
+                                    required
                                 />
                                 <TextField
-                                    placeholder='+998'
+                                    placeholder='+99893 514 16 02'
                                     name='phone'
-                                    value={userInfo.phone_number}
-                                    onChange={(e) =>
-                                        setUserInfo({
-                                            ...userInfo,
-                                            phone_number: e.target.value,
-                                        })
-                                    }
+                                    value={userInfo.phone_number || '+998'}
+                                    onChange={handleInputChange}
+                                    inputProps={{
+                                        maxLength: 17,
+                                    }}
+                                    required
                                 />
                                 <Button sx={buttonStyles} type='submit'>
                                     Ro'yxatdan o'tish
@@ -132,7 +146,9 @@ export default function BasicModal({
             </Modal>
         </>
     );
-}
+};
+
+export default BasicModal;
 
 const iconWrapperStyles = {
     position: 'absolute',
@@ -181,4 +197,15 @@ const dividerStyles = {
     mx: 'auto',
     bgcolor: 'grey.600',
     mb: 3,
+};
+
+const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    maxWidth: 560,
+    width: '100%',
+    bgcolor: 'background.paper',
+    boxShadow: 24,
 };
