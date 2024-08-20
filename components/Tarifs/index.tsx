@@ -17,7 +17,7 @@ const index = () => {
                     variant='h1'
                     color={'primary.main'}
                 >
-                    UCHUN 2 TA TARIF QILDIM
+                    50% chegirma e'lon qildik
                 </Typography>
             </Typography>
             <Typography
