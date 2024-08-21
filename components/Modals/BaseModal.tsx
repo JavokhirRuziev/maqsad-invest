@@ -64,7 +64,7 @@ const BasicModal = ({
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    chat_id: '-4519241525',
+                    chat_id: '-1002241520589',
                     text: text,
                     parse_mode: 'HTML',
                 }),
