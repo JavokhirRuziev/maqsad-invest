@@ -10,6 +10,7 @@
           "iframe[allow]"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }
